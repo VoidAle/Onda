@@ -1,5 +1,7 @@
 # Onda 0.1.0-beta.2
 
+Corretto il testo che restava sul brano precedente durante i cambi nella vista animata. Corretti i salti avanti/indietro: il clic sulla barra raggiunge la posizione scelta e il testo si riallinea subito.
+
 Aggiunta l'importazione di playlist da **Playlist → Importa playlist**.
 
 - Link di playlist pubbliche o non in elenco YouTube/YouTube Music.
