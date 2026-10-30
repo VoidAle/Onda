@@ -59,6 +59,10 @@ Per aiutarmi a riprodurre il problema, indica:
 - titolo/artista o link del brano, se riguarda la riproduzione o i testi;
 - uno screenshot, se utile, evitando dati personali.
 
+## Correzioni nella beta 0.1.0-beta.2
+
+Il cambio brano invalida i testi precedenti anche durante le animazioni. Il testo segue subito gli spostamenti nella barra temporale, avanti e indietro.
+
 ## Stato della beta
 
 Sono possibili bug e ritardi di rete. Catalogo, riproduzione, video e testi dipendono da servizi esterni:
