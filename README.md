@@ -1,7 +1,7 @@
 <p align="center"><img src="assets/onda.png" width="88" alt="Onda"></p>
 <h1 align="center">Onda · Windows beta</h1>
 <p align="center">Un lettore musicale minimale, con playlist, testi e controlli Windows.</p>
-<p align="center"><a href="https://github.com/VoidAle/Onda/releases/tag/v0.1.0-beta.7">Scarica la beta</a> · <a href="[https://discord.com/users/1007318097985798144](https://discord.gg/yAZKCjnS8)">Segnala un bug su Discord</a></p>
+<p align="center"><a href="https://github.com/VoidAle/Onda/releases/tag/v0.1.0-beta.7">Scarica la beta</a> · <a href="[https://discord.gg/yAZKCjnS8]">Segnala un bug su Discord</a></p>
 
 ## Installazione
 
@@ -86,7 +86,7 @@ Features include artist profiles, albums, local playlists, favorites, listening 
 lyrics when available, album artwork, Windows media controls, light/dark themes and an English interface.
 Change the language in **Settings → Language**.
 
-Report bugs via **[Discord]([https://discord.com/users/1007318097985798144](https://discord.gg/yAZKCjnS8))** and include the app version,
+Report bugs via **[Discord]([https://discord.gg/yAZKCjnS8])** and include the app version,
 Windows version, reproduction steps, and the affected song/link. Messaging availability depends on Discord settings.
 This is a binary-only beta release; source code is not published in this repository.
 
