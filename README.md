@@ -1,7 +1,7 @@
 <p align="center"><img src="assets/onda.png" width="88" alt="Onda"></p>
 <h1 align="center">Onda · Windows beta</h1>
 <p align="center">Un lettore musicale minimale, con playlist, testi e controlli Windows.</p>
-<p align="center"><a href="https://github.com/VoidAle/Onda/releases/tag/v0.1.0-beta.7">Scarica la beta</a> · <a href="[https://discord.gg/yAZKCjnS8]">Segnala un bug su Discord</a></p>
+<p align="center"><a href="https://github.com/VoidAle/Onda/releases/tag/v0.1.0-beta.7">Scarica la beta</a> · <a href="https://discord.gg/yAZKCjnS8">Segnala un bug su Discord</a></p>
 
 ## Installazione
 
