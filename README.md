@@ -1,12 +1,12 @@
 <p align="center"><img src="assets/onda.png" width="88" alt="Onda"></p>
 <h1 align="center">Onda · Windows beta</h1>
 <p align="center">Un lettore musicale minimale, con playlist, testi e controlli Windows.</p>
-<p align="center"><a href="https://github.com/VoidAle/Onda/releases/tag/v0.1.0-beta.3">Scarica la beta</a> · <a href="https://discord.com/users/1007318097985798144">Segnala un bug su Discord</a></p>
+<p align="center"><a href="https://github.com/VoidAle/Onda/releases/tag/v0.1.0-beta.5">Scarica la beta</a> · <a href="https://discord.com/users/1007318097985798144">Segnala un bug su Discord</a></p>
 
 ## Installazione
 
-1. Apri la [release 0.1.0-beta.3](https://github.com/VoidAle/Onda/releases/tag/v0.1.0-beta.3).
-2. Scarica **Onda-0.1.0-beta.3-windows-x64.zip** ed estrai il contenuto.
+1. Apri la [release 0.1.0-beta.5](https://github.com/VoidAle/Onda/releases/tag/v0.1.0-beta.5).
+2. Scarica **Onda-0.1.0-beta.5-windows-x64.zip** ed estrai il contenuto.
 3. Avvia **Onda.exe**. Non serve installare Python o Node.js.
 
 Richiede Windows 10/11 a 64 bit e una connessione Internet. La beta non e firmata digitalmente.
@@ -59,7 +59,7 @@ Per aiutarmi a riprodurre il problema, indica:
 - titolo/artista o link del brano, se riguarda la riproduzione o i testi;
 - uno screenshot, se utile, evitando dati personali.
 
-## Correzioni nella beta 0.1.0-beta.3
+## Correzioni nella beta 0.1.0-beta.5
 
 Il cambio brano invalida i testi precedenti anche durante le animazioni. Il testo segue subito gli spostamenti nella barra temporale, avanti e indietro.
 
@@ -79,7 +79,7 @@ I componenti di terze parti conservano le proprie licenze, incluse nel pacchetto
 ## English
 
 Onda is a minimal Windows music player, currently in beta. Download the ZIP from
-[Releases](https://github.com/VoidAle/Onda/releases/tag/v0.1.0-beta.3), extract it, and run **Onda.exe**.
+[Releases](https://github.com/VoidAle/Onda/releases/tag/v0.1.0-beta.5), extract it, and run **Onda.exe**.
 Windows 10/11 x64 and an Internet connection are required. No Python or Node.js installation is needed.
 
 Features include artist profiles, albums, local playlists, favorites, listening history, a sleep timer,
@@ -95,3 +95,7 @@ Playlist imports: YouTube/YouTube Music public or unlisted links; exported CSV/T
 ## Novita beta.3
 
 Ricerca mentre scrivi, sfondi copertina sfocati e animati, testi con regolazione temporale per brano, video riallineato e scelta uscita audio/Bluetooth nelle Impostazioni. L’abbinamento Bluetooth si completa nella pagina Windows aperta dall’app.
+
+## Aggiornamento beta.5
+
+Solo copertine, vista testo senza sidebar con riga attiva visibile, card Home proporzionate, Discord automatico con logo/brano e pulsante download. Nessun ID o portale sviluppatori richiesto agli utenti. Guida di personalizzazione TXT inclusa.
