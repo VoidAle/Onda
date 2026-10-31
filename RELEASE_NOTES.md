@@ -1,3 +1,14 @@
+# Onda 0.1.0-beta.7
+
+- Corretto il blocco/crash aprendo Preferiti e altre liste con pochi brani: eliminato il ciclo di ridimensionamento della scrollbar. Spazio sotto l’ultimo brano mantenuto nel contenuto della lista, senza fascia opaca.
+- Preferiti e Recenti si aprono direttamente, senza passare dalla Home e senza avviare estrazioni audio automatiche.
+- Navigazione accodata fuori dall’evento del clic e uscita dalla vista testo senza catture intermedie della pagina.
+- Scritture dei controlli multimediali Windows accodate e protette dalle chiamate COM durante input sincrono, con retry limitato degli errori.
+- Diagnostica locale dei blocchi prolungati inclusa nel rapporto errori esportabile. Nessun invio automatico.
+- Test: 60 clic Qt tra Preferiti e Recenti, liste vuote/corte/lunghe, scorrimento dell’ultimo brano, coda e file originali invariati. Riproduzione del vecchio ciclo con oltre 19.000 variazioni di scrollbar in quattro secondi; comportamento corretto senza il ciclo.
+
+Scarica **Onda-0.1.0-beta.7-windows-x64.zip**, estrailo e avvia Onda.exe. La beta.6 rileva questa versione attraverso il controllo aggiornamenti. Per aggiornare chiudi la vecchia copia prima di sostituirla. Windows 10/11 x64. Dati locali conservati, sorgenti privati, nessuna registrazione.
+
 # Onda 0.1.0-beta.6
 
 - Controllo automatico aggiornamenti all’avvio e ogni sei ore, avviso non invasivo e pulsante per scaricare lo ZIP dal repository ufficiale. Controllo manuale nelle Impostazioni; gestione degli errori di rete senza bloccare l’ascolto. Nessun token o account richiesto.
