@@ -6,7 +6,7 @@
 ## Installazione
 
 1. Apri la [release 0.1.0-beta.7](https://github.com/VoidAle/Onda/releases/tag/v0.1.0-beta.7).
-2. Scarica **Onda-0.1.0-beta.7-windows-x64.zip** ed estrai il contenuto.
+2. Scarica **Onda-0.1.0-beta.7-windows-x64-final.zip** ed estrai il contenuto.
 3. Avvia **Onda.exe**. Non serve installare Python o Node.js.
 
 Richiede Windows 10/11 a 64 bit e una connessione Internet. La beta non e firmata digitalmente.
@@ -94,7 +94,7 @@ Playlist imports: YouTube/YouTube Music public or unlisted links; exported CSV/T
 
 ## Aggiornamento beta.5
 
-Solo copertine, vista testo senza sidebar con riga attiva visibile, card Home proporzionate, Discord automatico con logo/brano e pulsante download. Nessun ID o portale sviluppatori richiesto agli utenti. Guida di personalizzazione TXT inclusa.
+Solo copertine, vista testo senza sidebar con riga attiva visibile, card Home proporzionate, Discord automatico con logo/brano e pulsante download. Nessun ID o portale sviluppatori richiesto agli utenti.
 
 Recenti e playlist: gestione robusta di metadati vecchi/non validi e navigazione senza texture offscreen. Nessuna cancellazione della cronologia. In caso di errore i dettagli rimangono localmente in `%LOCALAPPDATA%\OndaPlayer\errors.log`.
 
