@@ -1,12 +1,12 @@
-# Onda 0.1.0-beta.3
+# Onda 0.1.0-beta.5
 
-- Ricerca durante la digitazione dopo una breve pausa, senza premere Invio; risposte obsolete ignorate.
-- Sfondo liquid glass con copertina realmente sfocata nella vista testo e nel lettore inferiore; riflessi animati, compatibili con Riduci animazioni.
-- Testi: migliore riconoscimento dei crediti feat., ricerca alternativa LRCLIB e nuovo tentativo che ignora la cache. I testi normali vengono ricontrollati dopo un minuto.
-- Pulsante orologio nel testo per regolare anticipo/ritardo da -30 a +30 secondi, salvato per brano. La disponibilita dei timestamp dipende dai servizi.
-- Video: riallineamento periodico, correzione graduale dei piccoli scarti e seek dopo salti e caricamento; preferenza per flussi diretti e codec H.264 quando disponibili.
-- Impostazioni > Audio e Bluetooth: scelta uscita audio e apertura dell'abbinamento Bluetooth di Windows. Cuffie/casse appaiono dopo la connessione; aggiornamento automatico della lista.
+- Vista testo immersiva: sidebar nascosta, sfondo copertina continuo fino alla barra superiore.
+- Riga cantata sempre disegnata, senza layer grafici per riga che potevano farla sparire nello scorrimento. Bordi del testo sfumati e fonte spostata in alto, senza taglio inferiore.
+- Copertine Home quadrate con spazio dedicato a titolo e artista, verificate a 1180/1440/1920 px.
+- Solo copertine, nessun video o regolazione manuale dei tempi.
+- Associazione dei vecchi videoclip alla versione audio ufficiale compatibile, per usare audio, testo e copertina della stessa versione. Verificati Tommaso, Mattone e Il tempo cura.
+- Disattivando il casuale si resta nella playlist e si prosegue dal brano attuale. Player flottante senza fascia opaca; controlli inferiori senza tooltip.
+- Discord automatico: scheda Sta ascoltando Onda con logo, titolo, artista, avanzamento e pulsante Scarica Onda. Nessun Application ID o Developer Portal da configurare nell'app. Richiede Discord desktop e condivisione attivita abilitata; si puo disattivare nelle Impostazioni. Nessun token bot richiesto.
+- Guida GUIDA_MODIFICHE.txt inclusa per colori, dimensioni, animazioni e punti del codice modificabili.
 
-Verificati online Mattone (Papa V: 50 righe; Angelica Bove: 38 righe), cambio brano/seek testi e riproduzione video con cambio ripetuto copertina/video.
-
-Scarica lo ZIP, estrailo e avvia Onda.exe. Windows 10/11 x64, Internet. Preferiti e playlist locali conservati. Sorgenti dell'app non pubblicati.
+Scarica Onda-0.1.0-beta.5-windows-x64.zip, estrailo e avvia Onda.exe. Windows 10/11 x64 e Internet. Preferiti, playlist e cronologia locali conservati. Licenze e checksum inclusi. Codice sorgente dell'app non pubblicato.
