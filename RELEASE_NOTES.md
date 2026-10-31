@@ -7,7 +7,7 @@
 - Diagnostica locale dei blocchi prolungati inclusa nel rapporto errori esportabile. Nessun invio automatico.
 - Test: 60 clic Qt tra Preferiti e Recenti, liste vuote/corte/lunghe, scorrimento dell’ultimo brano, coda e file originali invariati. Riproduzione del vecchio ciclo con oltre 19.000 variazioni di scrollbar in quattro secondi; comportamento corretto senza il ciclo.
 
-Scarica **Onda-0.1.0-beta.7-windows-x64.zip**, estrailo e avvia Onda.exe. La beta.6 rileva questa versione attraverso il controllo aggiornamenti. Per aggiornare chiudi la vecchia copia prima di sostituirla. Windows 10/11 x64. Dati locali conservati, sorgenti privati, nessuna registrazione.
+Scarica **Onda-0.1.0-beta.7-windows-x64-final.zip**, estrailo e avvia Onda.exe. La beta.6 rileva questa versione attraverso il controllo aggiornamenti. Per aggiornare chiudi la vecchia copia prima di sostituirla. Windows 10/11 x64. Dati locali conservati, sorgenti privati, nessuna registrazione.
 
 # Onda 0.1.0-beta.6
 
@@ -18,7 +18,7 @@ Scarica **Onda-0.1.0-beta.7-windows-x64.zip**, estrailo e avvia Onda.exe. La bet
 - Stati dei testi espliciti e gestione robusta dei timestamp non validi. Conservate le correzioni Recenti/playlist, copertine e Discord della beta.5.
 - Verifiche su indici delle playlist filtrate, persistenza del riordino, errori di salvataggio, coda invariata durante le modifiche, aggiornamenti beta/stabili/offline e rapporti errori.
 
-Scarica **Onda-0.1.0-beta.6-windows-x64.zip**, estrai i file e avvia Onda.exe. Per aggiornare chiudi prima la vecchia copia; playlist, preferiti e cronologia restano sul computer. Windows 10/11 x64. Versione ancora beta, senza registrazione. Codice sorgente privato.
+Scarica **Onda-0.1.0-beta.6-windows-x64-final.zip**, estrai i file e avvia Onda.exe. Per aggiornare chiudi prima la vecchia copia; playlist, preferiti e cronologia restano sul computer. Windows 10/11 x64. Versione ancora beta, senza registrazione. Codice sorgente privato.
 
 # Onda 0.1.0-beta.5
 
@@ -30,6 +30,5 @@ Scarica **Onda-0.1.0-beta.6-windows-x64.zip**, estrai i file e avvia Onda.exe. P
 - Associazione dei vecchi videoclip alla versione audio ufficiale compatibile, per usare audio, testo e copertina della stessa versione. Verificati Tommaso, Mattone e Il tempo cura.
 - Disattivando il casuale si resta nella playlist e si prosegue dal brano attuale. Player flottante senza fascia opaca; controlli inferiori senza tooltip.
 - Discord automatico: scheda Sta ascoltando Onda con logo, titolo, artista, avanzamento e pulsante Scarica Onda. Nessun Application ID o Developer Portal da configurare nell'app. Richiede Discord desktop e condivisione attivita abilitata; si puo disattivare nelle Impostazioni. Nessun token bot richiesto.
-- Guida GUIDA_MODIFICHE.txt inclusa per colori, dimensioni, animazioni e punti del codice modificabili.
 
 Scarica Onda-0.1.0-beta.5-windows-x64-final.zip, estrailo e avvia Onda.exe. Windows 10/11 x64 e Internet. Preferiti, playlist e cronologia locali conservati. Licenze e checksum inclusi. Codice sorgente dell'app non pubblicato.
