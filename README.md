@@ -19,7 +19,7 @@ Il pacchetto contiene le licenze dei componenti di terze parti e il file SHA256S
 - Creare playlist locali, scegliere il casuale, gestire la coda e continuare con suggerimenti.
 - Salvare i **Preferiti** con il cuore o dal menu **⋯** di un brano.
 - Riaprire **Recenti**, la cronologia dei brani realmente avviati.
-- Aprire la vista di ascolto con copertina/video e testo sincronizzato quando disponibile.
+- Aprire la vista di ascolto con copertina e testo sincronizzato quando disponibile.
 - Impostare il **timer di spegnimento** dal simbolo orologio o da Impostazioni: allo scadere la musica va in pausa.
 - Scegliere tema chiaro/scuro, Italiano/English, dimensione del testo e movimento ridotto.
 - Usare i controlli multimediali di Windows.
@@ -65,7 +65,7 @@ Il cambio brano invalida i testi precedenti anche durante le animazioni. Il test
 
 ## Stato della beta
 
-Sono possibili bug e ritardi di rete. Catalogo, riproduzione, video e testi dipendono da servizi esterni:
+Sono possibili bug e ritardi di rete. Catalogo, riproduzione e testi dipendono da servizi esterni:
 la disponibilita puo cambiare e alcuni testi non hanno timestamp. Onda preferisce testi sincronizzati
 compatibili con la versione del brano, senza inventare i tempi mancanti.
 
@@ -83,7 +83,7 @@ Onda is a minimal Windows music player, currently in beta. Download the ZIP from
 Windows 10/11 x64 and an Internet connection are required. No Python or Node.js installation is needed.
 
 Features include artist profiles, albums, local playlists, favorites, listening history, a sleep timer,
-lyrics when available, optional video artwork, Windows media controls, light/dark themes and an English interface.
+lyrics when available, album artwork, Windows media controls, light/dark themes and an English interface.
 Change the language in **Settings → Language**.
 
 Report bugs via **[Discord](https://discord.com/users/1007318097985798144)** and include the app version,
@@ -91,10 +91,6 @@ Windows version, reproduction steps, and the affected song/link. Messaging avail
 This is a binary-only beta release; source code is not published in this repository.
 
 Playlist imports: YouTube/YouTube Music public or unlisted links; exported CSV/TXT/XML files from Spotify, Apple Music and other services. Direct Spotify/Apple Music account integration is not available yet. Review matches before saving; uncertain matches are unchecked. Source order and selected duplicates are preserved.
-
-## Novita beta.3
-
-Ricerca mentre scrivi, sfondi copertina sfocati e animati, testi con regolazione temporale per brano, video riallineato e scelta uscita audio/Bluetooth nelle Impostazioni. L’abbinamento Bluetooth si completa nella pagina Windows aperta dall’app.
 
 ## Aggiornamento beta.5
 
