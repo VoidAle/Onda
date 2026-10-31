@@ -9,4 +9,4 @@
 - Discord automatico: scheda Sta ascoltando Onda con logo, titolo, artista, avanzamento e pulsante Scarica Onda. Nessun Application ID o Developer Portal da configurare nell'app. Richiede Discord desktop e condivisione attivita abilitata; si puo disattivare nelle Impostazioni. Nessun token bot richiesto.
 - Guida GUIDA_MODIFICHE.txt inclusa per colori, dimensioni, animazioni e punti del codice modificabili.
 
-Scarica Onda-0.1.0-beta.5-windows-x64.zip, estrailo e avvia Onda.exe. Windows 10/11 x64 e Internet. Preferiti, playlist e cronologia locali conservati. Licenze e checksum inclusi. Codice sorgente dell'app non pubblicato.
+Scarica Onda-0.1.0-beta.5-windows-x64-final.zip, estrailo e avvia Onda.exe. Windows 10/11 x64 e Internet. Preferiti, playlist e cronologia locali conservati. Licenze e checksum inclusi. Codice sorgente dell'app non pubblicato.
