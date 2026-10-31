@@ -1,12 +1,12 @@
 <p align="center"><img src="assets/onda.png" width="88" alt="Onda"></p>
 <h1 align="center">Onda · Windows beta</h1>
 <p align="center">Un lettore musicale minimale, con playlist, testi e controlli Windows.</p>
-<p align="center"><a href="https://github.com/VoidAle/Onda/releases/tag/v0.1.0-beta.5">Scarica la beta</a> · <a href="https://discord.com/users/1007318097985798144">Segnala un bug su Discord</a></p>
+<p align="center"><a href="https://github.com/VoidAle/Onda/releases/tag/v0.1.0-beta.6">Scarica la beta</a> · <a href="https://discord.com/users/1007318097985798144">Segnala un bug su Discord</a></p>
 
 ## Installazione
 
-1. Apri la [release 0.1.0-beta.5](https://github.com/VoidAle/Onda/releases/tag/v0.1.0-beta.5).
-2. Scarica **Onda-0.1.0-beta.5-windows-x64-final.zip** ed estrai il contenuto.
+1. Apri la [release 0.1.0-beta.6](https://github.com/VoidAle/Onda/releases/tag/v0.1.0-beta.6).
+2. Scarica **Onda-0.1.0-beta.6-windows-x64.zip** ed estrai il contenuto.
 3. Avvia **Onda.exe**. Non serve installare Python o Node.js.
 
 Richiede Windows 10/11 a 64 bit e una connessione Internet. La beta non e firmata digitalmente.
@@ -79,7 +79,7 @@ I componenti di terze parti conservano le proprie licenze, incluse nel pacchetto
 ## English
 
 Onda is a minimal Windows music player, currently in beta. Download the ZIP from
-[Releases](https://github.com/VoidAle/Onda/releases/tag/v0.1.0-beta.5), extract it, and run **Onda.exe**.
+[Releases](https://github.com/VoidAle/Onda/releases/tag/v0.1.0-beta.6), extract it, and run **Onda.exe**.
 Windows 10/11 x64 and an Internet connection are required. No Python or Node.js installation is needed.
 
 Features include artist profiles, albums, local playlists, favorites, listening history, a sleep timer,
@@ -97,3 +97,15 @@ Playlist imports: YouTube/YouTube Music public or unlisted links; exported CSV/T
 Solo copertine, vista testo senza sidebar con riga attiva visibile, card Home proporzionate, Discord automatico con logo/brano e pulsante download. Nessun ID o portale sviluppatori richiesto agli utenti. Guida di personalizzazione TXT inclusa.
 
 Recenti e playlist: gestione robusta di metadati vecchi/non validi e navigazione senza texture offscreen. Nessuna cancellazione della cronologia. In caso di errore i dettagli rimangono localmente in `%LOCALAPPDATA%\OndaPlayer\errors.log`.
+
+
+## Novità beta.6
+
+- Controllo aggiornamenti automatico all’avvio e ogni 6 ore, con avviso nell’app e pulsante download. Include le nuove beta; quando Onda sarà stabile seguirà soltanto le versioni stabili. Si può disattivare in Impostazioni → Aggiornamenti.
+- Il download si apre nel browser sullo ZIP ufficiale GitHub. Chiudi Onda, estrai lo ZIP e sostituisci l’eseguibile: nessun riavvio forzato o installazione silenziosa. Playlist, preferiti e cronologia restano in OndaPlayer.
+- Ricerca dentro le playlist per titolo, artista o album, anche senza accenti; trascina i brani per riordinarli e salvare l’ordine. Il riordino è disponibile con ricerca vuota. La coda già avviata conserva il suo ordine.
+- Duplicati: pulsante con conteggio, rimozione su conferma e annullamento durante la sessione. La verifica usa l’identità del brano, senza confondere remix o live omonimi.
+- Impostazioni → Assistenza → Esporta rapporto errori: ZIP locale con versione, sistema e log recenti, senza playlist, preferiti, cronologia o impostazioni. Identificativi comuni oscurati; controlla il contenuto prima di condividerlo. Nessun invio automatico.
+- Barra superiore nera come la navigazione. Testi con stati distinti: sincronizzato, semplice, strumentale, non disponibile o servizio temporaneamente irraggiungibile.
+
+Questa versione resta in beta e non introduce registrazione o account.
