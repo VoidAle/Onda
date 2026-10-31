@@ -1,5 +1,6 @@
 # Onda 0.1.0-beta.5
 
+- Corretta la gestione di metadati vecchi o non validi aprendo Recenti e playlist; caricamento liste senza effetti grafici offscreen e selezioni transitorie. Cronologia e playlist originali preservate.
 - Vista testo immersiva: sidebar nascosta, sfondo copertina continuo fino alla barra superiore.
 - Riga cantata sempre disegnata, senza layer grafici per riga che potevano farla sparire nello scorrimento. Bordi del testo sfumati e fonte spostata in alto, senza taglio inferiore.
 - Copertine Home quadrate con spazio dedicato a titolo e artista, verificate a 1180/1440/1920 px.
