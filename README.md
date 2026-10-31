@@ -6,7 +6,7 @@
 ## Installazione
 
 1. Apri la [release 0.1.0-beta.5](https://github.com/VoidAle/Onda/releases/tag/v0.1.0-beta.5).
-2. Scarica **Onda-0.1.0-beta.5-windows-x64.zip** ed estrai il contenuto.
+2. Scarica **Onda-0.1.0-beta.5-windows-x64-final.zip** ed estrai il contenuto.
 3. Avvia **Onda.exe**. Non serve installare Python o Node.js.
 
 Richiede Windows 10/11 a 64 bit e una connessione Internet. La beta non e firmata digitalmente.
