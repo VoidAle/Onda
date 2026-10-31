@@ -1,3 +1,14 @@
+# Onda 0.1.0-beta.6
+
+- Controllo automatico aggiornamenti all’avvio e ogni sei ore, avviso non invasivo e pulsante per scaricare lo ZIP dal repository ufficiale. Controllo manuale nelle Impostazioni; gestione degli errori di rete senza bloccare l’ascolto. Nessun token o account richiesto.
+- Ricerca interna alle playlist, riordino dei brani trascinandoli e salvataggio dell’ordine. Rimozione duplicati basata sull’identità del brano, con conteggio, conferma e annullamento nella sessione.
+- Esportazione volontaria di un rapporto errori ZIP: versione, sistema e log limitati/oscurati, senza dati della libreria né invio automatico.
+- Barra superiore nera, senza fascia grigia in navigazione; sfondo copertina continuo nella vista testo.
+- Stati dei testi espliciti e gestione robusta dei timestamp non validi. Conservate le correzioni Recenti/playlist, copertine e Discord della beta.5.
+- Verifiche su indici delle playlist filtrate, persistenza del riordino, errori di salvataggio, coda invariata durante le modifiche, aggiornamenti beta/stabili/offline e rapporti errori.
+
+Scarica **Onda-0.1.0-beta.6-windows-x64.zip**, estrai i file e avvia Onda.exe. Per aggiornare chiudi prima la vecchia copia; playlist, preferiti e cronologia restano sul computer. Windows 10/11 x64. Versione ancora beta, senza registrazione. Codice sorgente privato.
+
 # Onda 0.1.0-beta.5
 
 - Corretta la gestione di metadati vecchi o non validi aprendo Recenti e playlist; caricamento liste senza effetti grafici offscreen e selezioni transitorie. Cronologia e playlist originali preservate.
