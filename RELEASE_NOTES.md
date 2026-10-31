@@ -1,22 +1,12 @@
-# Onda 0.1.0-beta.2
+# Onda 0.1.0-beta.3
 
-Corretto il testo che restava sul brano precedente durante i cambi nella vista animata. Corretti i salti avanti/indietro: il clic sulla barra raggiunge la posizione scelta e il testo si riallinea subito.
+- Ricerca durante la digitazione dopo una breve pausa, senza premere Invio; risposte obsolete ignorate.
+- Sfondo liquid glass con copertina realmente sfocata nella vista testo e nel lettore inferiore; riflessi animati, compatibili con Riduci animazioni.
+- Testi: migliore riconoscimento dei crediti feat., ricerca alternativa LRCLIB e nuovo tentativo che ignora la cache. I testi normali vengono ricontrollati dopo un minuto.
+- Pulsante orologio nel testo per regolare anticipo/ritardo da -30 a +30 secondi, salvato per brano. La disponibilita dei timestamp dipende dai servizi.
+- Video: riallineamento periodico, correzione graduale dei piccoli scarti e seek dopo salti e caricamento; preferenza per flussi diretti e codec H.264 quando disponibili.
+- Impostazioni > Audio e Bluetooth: scelta uscita audio e apertura dell'abbinamento Bluetooth di Windows. Cuffie/casse appaiono dopo la connessione; aggiornamento automatico della lista.
 
-Aggiunta l'importazione di playlist da **Playlist → Importa playlist**.
+Verificati online Mattone (Papa V: 50 righe; Angelica Bove: 38 righe), cambio brano/seek testi e riproduzione video con cambio ripetuto copertina/video.
 
-- Link di playlist pubbliche o non in elenco YouTube/YouTube Music.
-- File CSV esportati da Spotify o altri servizi; TXT/XML Apple Music/iTunes; elenchi TXT Artista - Titolo.
-- Ricerca per titolo, artista e durata, con filtro delle versioni live/remix differenti.
-- Riepilogo dei brani trovati, dubbi, mancanti o con errore di rete.
-- Le corrispondenze dubbie sono deselezionate; conferma solo quelle che vuoi importare.
-- Nuova playlist locale, ordine e duplicati selezionati conservati, senza cambiare la playlist di origine.
-
-**I link diretti Spotify/Apple Music e l'accesso agli account non sono ancora supportati: per questi servizi usa un file esportato.**
-Non viene scaricato audio da Spotify o Apple Music; vengono cercate corrispondenze in YouTube Music.
-
-Scarica lo ZIP, estrailo e avvia Onda.exe. Richiede Windows 10/11 x64 e Internet.
-Licenze e checksum sono inclusi. La beta non e firmata digitalmente.
-
-Bug: [Discord](https://discord.com/users/1007318097985798144), indicando versione, passaggi e un esempio di playlist/file senza dati personali.
-
-English: import public/unlisted YouTube Music playlist links or exported CSV/TXT/XML files. Direct Spotify/Apple Music account integration is not available yet. Review matches before creating a local playlist.
+Scarica lo ZIP, estrailo e avvia Onda.exe. Windows 10/11 x64, Internet. Preferiti e playlist locali conservati. Sorgenti dell'app non pubblicati.
