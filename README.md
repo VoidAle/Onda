@@ -1,12 +1,12 @@
 <p align="center"><img src="assets/onda.png" width="88" alt="Onda"></p>
 <h1 align="center">Onda · Windows beta</h1>
 <p align="center">Un lettore musicale minimale, con playlist, testi e controlli Windows.</p>
-<p align="center"><a href="https://github.com/VoidAle/Onda/releases/tag/v0.1.0-beta.6">Scarica la beta</a> · <a href="https://discord.com/users/1007318097985798144">Segnala un bug su Discord</a></p>
+<p align="center"><a href="https://github.com/VoidAle/Onda/releases/tag/v0.1.0-beta.7">Scarica la beta</a> · <a href="https://discord.com/users/1007318097985798144">Segnala un bug su Discord</a></p>
 
 ## Installazione
 
-1. Apri la [release 0.1.0-beta.6](https://github.com/VoidAle/Onda/releases/tag/v0.1.0-beta.6).
-2. Scarica **Onda-0.1.0-beta.6-windows-x64.zip** ed estrai il contenuto.
+1. Apri la [release 0.1.0-beta.7](https://github.com/VoidAle/Onda/releases/tag/v0.1.0-beta.7).
+2. Scarica **Onda-0.1.0-beta.7-windows-x64.zip** ed estrai il contenuto.
 3. Avvia **Onda.exe**. Non serve installare Python o Node.js.
 
 Richiede Windows 10/11 a 64 bit e una connessione Internet. La beta non e firmata digitalmente.
@@ -79,7 +79,7 @@ I componenti di terze parti conservano le proprie licenze, incluse nel pacchetto
 ## English
 
 Onda is a minimal Windows music player, currently in beta. Download the ZIP from
-[Releases](https://github.com/VoidAle/Onda/releases/tag/v0.1.0-beta.6), extract it, and run **Onda.exe**.
+[Releases](https://github.com/VoidAle/Onda/releases/tag/v0.1.0-beta.7), extract it, and run **Onda.exe**.
 Windows 10/11 x64 and an Internet connection are required. No Python or Node.js installation is needed.
 
 Features include artist profiles, albums, local playlists, favorites, listening history, a sleep timer,
@@ -109,3 +109,10 @@ Recenti e playlist: gestione robusta di metadati vecchi/non validi e navigazione
 - Barra superiore nera come la navigazione. Testi con stati distinti: sincronizzato, semplice, strumentale, non disponibile o servizio temporaneamente irraggiungibile.
 
 Questa versione resta in beta e non introduce registrazione o account.
+
+
+## Correzione beta.7 — Preferiti e liste corte
+
+Corretto un blocco dell’interfaccia aprendo Preferiti o altre liste con pochi brani: lo spazio sotto il player causava un ciclo continuo di ridimensionamento della scrollbar. Lo spazio finale ora appartiene al contenuto della lista, senza fascia opaca e senza alterare il numero dei brani.
+La navigazione è accodata fuori dal clic Windows; Preferiti e Recenti si aprono direttamente e non avviano la preparazione audio automatica. Le chiamate ai controlli multimediali Windows sono accodate e protette dalla rientranza COM.
+Il rapporto errori include anche log locali dei blocchi prolungati, senza invio automatico. Playlist e preferiti conservati.
