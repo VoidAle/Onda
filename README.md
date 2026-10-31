@@ -95,3 +95,5 @@ Playlist imports: YouTube/YouTube Music public or unlisted links; exported CSV/T
 ## Aggiornamento beta.5
 
 Solo copertine, vista testo senza sidebar con riga attiva visibile, card Home proporzionate, Discord automatico con logo/brano e pulsante download. Nessun ID o portale sviluppatori richiesto agli utenti. Guida di personalizzazione TXT inclusa.
+
+Recenti e playlist: gestione robusta di metadati vecchi/non validi e navigazione senza texture offscreen. Nessuna cancellazione della cronologia. In caso di errore i dettagli rimangono localmente in `%LOCALAPPDATA%\OndaPlayer\errors.log`.
