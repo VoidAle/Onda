@@ -2,8 +2,8 @@
 <h1 align="center">Onda</h1>
 <p align="center">Un lettore musicale per Windows: minimale, fluido e senza account.</p>
 <p align="center">
-  <a href="https://github.com/VoidAle/Onda/releases/download/v0.1.0-beta.9/Onda-0.1.0-beta.9-windows-x64-final.zip"><b>Scarica Onda 0.1.0-beta.9</b></a> ·
-  <a href="https://github.com/VoidAle/Onda/releases/tag/v0.1.0-beta.9">Novità</a> ·
+  <a href="https://github.com/VoidAle/Onda/releases/download/v0.1.0-beta.10/Onda-0.1.0-beta.10-windows-x64-final.zip"><b>Scarica Onda 0.1.0-beta.10</b></a> ·
+  <a href="https://github.com/VoidAle/Onda/releases/tag/v0.1.0-beta.10">Novità</a> ·
   <a href="https://discord.gg/SE4Q9gt3j">Segnala un bug</a>
 </p>
 
@@ -11,15 +11,24 @@
 
 ## Installazione
 
-1. Scarica **Onda-0.1.0-beta.9-windows-x64-final.zip** dalla [pagina della release](https://github.com/VoidAle/Onda/releases/tag/v0.1.0-beta.9).
+1. Scarica **Onda-0.1.0-beta.10-windows-x64-final.zip** dalla [pagina della release](https://github.com/VoidAle/Onda/releases/tag/v0.1.0-beta.10).
 2. Estrai lo ZIP in una cartella a tua scelta.
 3. Avvia **Onda.exe**. Non serve installare Python, Node.js o altro.
-
-Se ti basta il programma, nella stessa pagina trovi anche **Onda.exe** da solo, senza licenze e checksum.
 
 **Requisiti:** Windows 10 o 11 a 64 bit e una connessione Internet. La beta non è firmata digitalmente, quindi Windows può mostrare un avviso di SmartScreen: scegli *Ulteriori informazioni → Esegui comunque*.
 
 **Aggiornare:** chiudi Onda, estrai la nuova versione e sostituisci `Onda.exe`. Playlist, preferiti e impostazioni restano al loro posto. L'app controlla da sola le nuove versioni (si può disattivare in *Impostazioni → Aggiornamenti*).
+
+## Windows blocca il file?
+
+Se compare «Un criterio di controllo delle applicazioni ha bloccato questo file» o «estensione di file pericolosa dal web»:
+
+1. Non scaricare né spostare **Onda.exe** da solo: scarica sempre lo **ZIP** della release.
+2. Prima di estrarlo: tasto destro sullo ZIP → **Proprietà** → spunta **Sblocca** → OK. Poi **Estrai tutto**.
+3. Avvia **Onda.exe** dalla cartella estratta, senza copiarlo altrove (lascia la cartella com'è e crea un collegamento sul Desktop con tasto destro → *Invia a → Desktop*).
+4. In alternativa, da PowerShell nella cartella dello ZIP: `Get-ChildItem *.zip | Unblock-File`.
+
+La beta non è firmata digitalmente (la firma richiede un certificato a pagamento): con **Smart App Control** attivo Windows può comunque bloccare programmi non firmati; in quel caso l'unica via è disattivarlo in *Sicurezza di Windows → Controllo app e browser → Smart App Control*.
 
 ## Cosa fa
 
@@ -78,7 +87,7 @@ Questo repository distribuisce **il programma e la documentazione**: il codice s
 
 **Onda** is a minimal, fluid Windows music player with no account required. It is currently in beta.
 
-**Install:** download **Onda-0.1.0-beta.9-windows-x64-final.zip** from the [release page](https://github.com/VoidAle/Onda/releases/tag/v0.1.0-beta.9), extract it and run **Onda.exe**. The standalone **Onda.exe** is also attached to the release. Windows 10/11 (64-bit) and an Internet connection are required; no Python or Node.js needed. The beta is not code-signed, so SmartScreen may ask for confirmation (*More info → Run anyway*). To update, close Onda and replace `Onda.exe`: your data stays in `%LOCALAPPDATA%\OndaPlayer`.
+**Install:** download **Onda-0.1.0-beta.10-windows-x64-final.zip** from the [release page](https://github.com/VoidAle/Onda/releases/tag/v0.1.0-beta.10), extract it and run **Onda.exe**. Do not download or move **Onda.exe** on its own. Windows 10/11 (64-bit) and an Internet connection are required; no Python or Node.js needed. The beta is not code-signed, so SmartScreen may ask for confirmation (*More info → Run anyway*). If Windows says an app control policy blocked the file: right-click the ZIP → *Properties* → *Unblock* **before** extracting, then run Onda.exe from the extracted folder. To update, close Onda and replace `Onda.exe`: your data stays in `%LOCALAPPDATA%\OndaPlayer`.
 
 **Features:** search the YouTube Music catalogue, queue and autoplay, an immersive listening view with synced lyrics and optional video, local playlists (reorder, search, de-duplicate, share with a code or a `.onda` file), playlist import from YouTube Music, Spotify, Apple Music and CSV/TXT/XML files, offline downloads, Wrapped listening statistics, favorites and history, sleep timer, Windows media controls, optional Discord activity, eleven themes and an Italian/English interface (*Settings → Language*). *Reduce animations* turns off all motion.
 

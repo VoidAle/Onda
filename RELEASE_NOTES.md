@@ -1,3 +1,14 @@
+# Onda 0.1.0-beta.10
+
+- **Riapertura senza sorprese**: quando riapri Onda il brano è lì, in pausa, con coda, playlist, casuale e ripeti come prima. Non partono più suggerimenti al posto della tua playlist e la ripartenza è più veloce (il link audio è già pronto al primo play).
+- **Più veloce**: finestra pronta in circa metà tempo e cambio tema circa 4 volte più rapido. I testi si cercano in parallelo su più fonti e partono già mentre ascolti, così aprendo la vista di ascolto sono pronti.
+- **Interfaccia rifinita**: barra laterale più larga e centrata, playlist con la stessa pillola delle voci di menu, copertina della playlist più grande, card "Per te" più grandi e senza bande nere sopra e sotto.
+- **Più dimensioni**: la finestra si può ridurre fino a 940×600; barra laterale e player si adattano da soli a schermi piccoli e grandi.
+- **Tastiera**: barra spaziatrice play/pausa, Ctrl+frecce destra/sinistra per brano successivo/precedente, Ctrl+su/giù per il volume.
+- **Windows blocca il file?** Scarica sempre lo ZIP, sbloccalo (tasto destro → Proprietà → Sblocca) prima di estrarre e avvia Onda.exe dalla cartella estratta. Dettagli nel README.
+
+Scarica **Onda-0.1.0-beta.10-windows-x64-final.zip**, estrailo e avvia Onda.exe. Windows 10/11 x64. Dati locali conservati, sorgenti privati, nessuna registrazione.
+
 # Onda 0.1.0-beta.9
 
 - **Interfaccia ridisegnata**: barra laterale più spaziosa e ordinata, voce attiva evidenziata, passaggio del mouse morbido e coerente, Impostazioni a schede di vetro con caselle e menu rifiniti.
