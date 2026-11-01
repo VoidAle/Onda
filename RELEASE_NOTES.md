@@ -1,4 +1,4 @@
-# Onda 0.1.0-beta.10
+# Onda 0.1.0-beta.9
 
 - **Interfaccia ridisegnata**: barra laterale più spaziosa e ordinata, voce attiva evidenziata, passaggio del mouse morbido e coerente, Impostazioni a schede di vetro con caselle e menu rifiniti.
 - **Il tema resta il tuo**: riprodurre un brano non cambia più i colori dell'app. La copertina colora solo la vista di ascolto e il player in basso.
@@ -9,7 +9,7 @@
 - **Testi sincronizzati** per più brani: nuova fonte di riserva oltre a LRCLIB e YouTube Music.
 - **Cambio tema più veloce** e ricerca più reattiva. Cercando il nome di un artista che è anche titolo di brani, compaiono sia l'artista sia i brani.
 
-Scarica **Onda-0.1.0-beta.10-windows-x64-final.zip**, estrailo e avvia Onda.exe. Windows 10/11 x64. Dati locali conservati, sorgenti privati, nessuna registrazione.
+Scarica **Onda-0.1.0-beta.9-windows-x64-final.zip**, estrailo e avvia Onda.exe. Windows 10/11 x64. Dati locali conservati, sorgenti privati, nessuna registrazione.
 
 # Onda 0.1.0-beta.8
 
