@@ -1,3 +1,26 @@
+# Onda 0.1.0-beta.8
+
+- Nuovo **Wrapped**: minuti di ascolto effettivi (i salti nella barra non contano) e classifiche di brani, artisti e album per mese, anno o da sempre, con riproduzione dei tuoi preferiti. Tutto resta sul computer.
+- **Velocità**: connessioni a YouTube Music riutilizzate invece di riscaricare la pagina iniziale a ogni richiesta; ricerca artista e discografia in parallelo; audio dei videoclip preparato in anticipo; link audio validi per ore; ricerca mentre scrivi più leggera; impostazioni e traduzione dell’interfaccia senza ricalcoli inutili.
+- **Ricerca**: con una ricerca in italiano i brani omonimi in altre scritture (es. hindi, tamil, arabo) scendono in fondo; salgono quelli con tutte le parole cercate e degli artisti che ascolti di più.
+- **Animazioni**: il brano scorre a sinistra quando vai avanti e a destra quando torni indietro; dissolvenza nel cambio tema; menu arrotondati e animati con icone.
+- **Temi**: Chiaro, Scuro, Oceano, Aurora, Foresta, Tramonto, Rosa, Lilla, Avana, Sabbia e Personale (scegli il colore e lo sfondo chiaro o scuro).
+- **Playlist**: immagine personalizzata, condivisione tramite codice da incollare o file .onda (“Apri playlist condivisa”), nuova finestra “Salva in playlist” con ricerca e creazione rapida.
+- **Ascolto offline**: scarica un brano, una playlist o una raccolta; i brani scaricati partono subito, anche senza Internet.
+- **Videoclip facoltativo**: pulsante nella vista di ascolto e opzione nelle Impostazioni; disattivato resta la copertina dell’album.
+- Corretto: a volte la finestra non si riduceva a icona (anche dalla barra delle applicazioni). Player e barra laterale più compatti; link per le segnalazioni sul server Discord.
+- L’eseguibile pubblico non contiene più il codice di test interno.
+- **Più fluida e più bella**: scorrimento delle liste più leggero (le copertine non vengono più ridimensionate a ogni fotogramma), sfondo animato che non consuma risorse quando non serve, dissolvenza nell’apertura della finestra e nel cambio pagina, effetto vetro più curato su player e vista di ascolto (riflesso sul bordo alto e bordo luminoso), pulsanti che reagiscono alla pressione, maniglie di scrollbar e slider che si illuminano al passaggio del mouse. Con “Riduci le animazioni” tutto resta statico.
+- Corretto: chiudendo l’app durante un caricamento di rete poteva restare un processo invisibile; ora si chiude entro 20 secondi.
+- Corretto: le copertine che non si caricavano per un errore di rete restavano vuote fino al riavvio; ora vengono riprovate.
+- Corretto: il volume viene salvato anche se lo cambi con tastiera o rotellina.
+- Corretto: collegare o scollegare un dispositivo audio non interrompe più la musica se l’uscita scelta non cambia.
+- Corretto: testi non trovati per brani senza durata nota; rinomina ed eliminazione di playlist non più soggette a errori con menu non aggiornati.
+- **Sicurezza**: i codici di playlist condivisa hanno ora un limite di dimensione (8 MB, 5000 brani) contro codici costruiti per esaurire la memoria.
+- I file di log diagnostici vengono mantenuti entro circa 512 KB. Il nome predefinito nel saluto è “Ascoltatore”.
+
+Scarica **Onda-0.1.0-beta.8-windows-x64-final.zip**, estrailo e avvia Onda.exe. Le beta precedenti rilevano questa versione dal controllo aggiornamenti. Chiudi la vecchia copia prima di sostituirla. Windows 10/11 x64. Dati locali conservati, sorgenti privati, nessuna registrazione.
+
 # Onda 0.1.0-beta.7
 
 - Corretto il blocco/crash aprendo Preferiti e altre liste con pochi brani: eliminato il ciclo di ridimensionamento della scrollbar. Spazio sotto l’ultimo brano mantenuto nel contenuto della lista, senza fascia opaca.

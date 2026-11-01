@@ -1,118 +1,89 @@
-<p align="center"><img src="assets/onda.png" width="88" alt="Onda"></p>
-<h1 align="center">Onda · Windows beta</h1>
-<p align="center">Un lettore musicale minimale, con playlist, testi e controlli Windows.</p>
-<p align="center"><a href="https://github.com/VoidAle/Onda/releases/tag/v0.1.0-beta.7">Scarica la beta</a> · <a href="https://discord.gg/yAZKCjnS8">Segnala un bug su Discord</a></p>
+<p align="center"><img src="assets/onda.png" width="96" alt="Onda"></p>
+<h1 align="center">Onda</h1>
+<p align="center">Un lettore musicale per Windows: minimale, fluido e senza account.</p>
+<p align="center">
+  <a href="https://github.com/VoidAle/Onda/releases/download/v0.1.0-beta.8/Onda-0.1.0-beta.8-windows-x64-final.zip"><b>Scarica Onda 0.1.0-beta.8</b></a> ·
+  <a href="https://github.com/VoidAle/Onda/releases/tag/v0.1.0-beta.8">Novità</a> ·
+  <a href="https://discord.gg/SE4Q9gt3j">Segnala un bug</a>
+</p>
+
+---
 
 ## Installazione
 
-1. Apri la [release 0.1.0-beta.7](https://github.com/VoidAle/Onda/releases/tag/v0.1.0-beta.7).
-2. Scarica **Onda-0.1.0-beta.7-windows-x64-final.zip** ed estrai il contenuto.
-3. Avvia **Onda.exe**. Non serve installare Python o Node.js.
+1. Scarica **Onda-0.1.0-beta.8-windows-x64-final.zip** dalla [pagina della release](https://github.com/VoidAle/Onda/releases/tag/v0.1.0-beta.8).
+2. Estrai lo ZIP in una cartella a tua scelta.
+3. Avvia **Onda.exe**. Non serve installare Python, Node.js o altro.
 
-Richiede Windows 10/11 a 64 bit e una connessione Internet. La beta non e firmata digitalmente.
-Il pacchetto contiene le licenze dei componenti di terze parti e il file SHA256SUMS.txt.
+Se ti basta il programma, nella stessa pagina trovi anche **Onda.exe** da solo, senza licenze e checksum.
 
-## Cosa puoi fare
+**Requisiti:** Windows 10 o 11 a 64 bit e una connessione Internet. La beta non è firmata digitalmente, quindi Windows può mostrare un avviso di SmartScreen: scegli *Ulteriori informazioni → Esegui comunque*.
 
-- Cercare brani, artisti, album e playlist nel catalogo YouTube Music.
-- Aprire il profilo di un artista e sfogliare le uscite, con copertine e scorrimento animato.
-- Creare playlist locali, scegliere il casuale, gestire la coda e continuare con suggerimenti.
-- Salvare i **Preferiti** con il cuore o dal menu **⋯** di un brano.
-- Riaprire **Recenti**, la cronologia dei brani realmente avviati.
-- Aprire la vista di ascolto con copertina e testo sincronizzato quando disponibile.
-- Impostare il **timer di spegnimento** dal simbolo orologio o da Impostazioni: allo scadere la musica va in pausa.
-- Scegliere tema chiaro/scuro, Italiano/English, dimensione del testo e movimento ridotto.
-- Usare i controlli multimediali di Windows.
+**Aggiornare:** chiudi Onda, estrai la nuova versione e sostituisci `Onda.exe`. Playlist, preferiti e impostazioni restano al loro posto. L'app controlla da sola le nuove versioni (si può disattivare in *Impostazioni → Aggiornamenti*).
 
-Per riprodurre un brano clicca sulla sua copertina. Il resto della riga seleziona il brano.
-Il casuale si attiva prima del Play; il menu **⋯** raccoglie le altre azioni.
+## Cosa fa
 
-## Importare playlist
+- **Cerca** brani, artisti, album e playlist nel catalogo YouTube Music, anche mentre scrivi.
+- **Ascolta** con coda, casuale, ripetizione e suggerimenti simili che continuano la musica quando finisce la playlist.
+- **Vista di ascolto** con copertina grande, testo sincronizzato quando disponibile e videoclip facoltativo.
+- **Playlist locali**: crea, riordina trascinando, cerca all'interno, rimuovi i duplicati, scegli un'immagine, condividi con un codice o un file `.onda`.
+- **Importa** playlist da YouTube Music, Spotify, Apple Music e file CSV, TXT o XML.
+- **Ascolto offline**: scarica brani o intere playlist e riproducili senza Internet.
+- **Wrapped**: i minuti realmente ascoltati e le classifiche di brani, artisti e album, per mese, anno o da sempre.
+- **Preferiti** e **Recenti**, timer di spegnimento, controlli multimediali di Windows e attività su Discord (disattivabile).
+- **Temi**: Chiaro, Scuro, Oceano, Aurora, Foresta, Tramonto, Rosa, Lilla, Avana, Sabbia e uno personale con il colore che scegli. Interfaccia in italiano e inglese.
 
-Apri **Playlist → Importa playlist**. Puoi provare anche il [CSV di esempio](examples/playlist.csv).
+Per riprodurre un brano clicca sulla sua copertina; il resto della riga lo seleziona. Il menu **⋯** raccoglie le altre azioni. Con *Riduci le animazioni* (Impostazioni → Aspetto) ogni movimento viene disattivato.
 
-- **YouTube / YouTube Music:** incolla il link di una playlist pubblica o non in elenco e premi **Apri link**.
-- **Spotify e altri servizi:** scegli un file CSV esportato, con colonne `Track Name` e `Artist Name(s)` oppure `Titolo` e `Artista`. La durata e facoltativa; `Duration (ms)` e riconosciuta.
-- **Apple Music / iTunes:** scegli una playlist esportata in XML o TXT con titoli e artisti.
-- **TXT semplice:** una riga `Artista - Titolo` per ogni brano.
+## Importare una playlist
 
-Onda cerca i titoli su YouTube Music e mostra le corrispondenze. Le versioni dubbie sono deselezionate;
-puoi verificarle e selezionarle manualmente. I brani non trovati restano nel riepilogo.
-Scegli un nome e premi **Importa**: viene creata una nuova playlist locale, mantenendo ordine e duplicati selezionati.
-La playlist originale e le playlist Onda esistenti non vengono modificate. Puoi annullare prima di salvare.
+Apri **Playlist → Importa playlist**. Puoi provare con il [CSV di esempio](examples/playlist.csv).
 
-**Limite attuale:** i link Spotify e Apple Music non vengono importati direttamente; servono i file esportati.
-Il collegamento autorizzato a questi account non e ancora disponibile. Nessun audio Spotify/Apple Music viene scaricato:
-la funzione importa l'elenco dei brani e trova corrispondenze nel catalogo di Onda.
-Sono supportati file fino a 10 MB e playlist fino a 5.000 voci leggibili.
+| Origine | Come fare |
+| --- | --- |
+| YouTube / YouTube Music | Incolla il link di una playlist pubblica o non in elenco e premi **Apri link**. |
+| Spotify e altri servizi | Scegli un file CSV esportato, con le colonne `Track Name` e `Artist Name(s)` oppure `Titolo` e `Artista`. La durata è facoltativa. |
+| Apple Music / iTunes | Scegli una playlist esportata in XML o TXT con titoli e artisti. |
+| Testo semplice | Un file TXT con una riga `Artista - Titolo` per ogni brano. |
+
+Onda cerca ogni titolo su YouTube Music e mostra le corrispondenze: quelle dubbie restano deselezionate e puoi controllarle a mano, mentre i brani non trovati compaiono nel riepilogo. Premendo **Importa** nasce una nuova playlist locale; la playlist di partenza e le tue playlist esistenti non vengono toccate.
+
+I link di Spotify e Apple Music non si importano direttamente, perché servirebbe il collegamento autorizzato ai tuoi account: usa il file esportato. Nessun audio viene scaricato da quei servizi, vengono lette solo le informazioni dei brani. Sono supportati file fino a 10 MB e playlist fino a 5.000 brani.
+
+## Privacy
+
+- Nessun account Onda e nessuna registrazione.
+- Playlist, preferiti, cronologia, statistiche e impostazioni restano sul tuo computer, in `%LOCALAPPDATA%\OndaPlayer`.
+- Ricerche, riproduzione e testi sono richieste ai rispettivi servizi esterni (YouTube Music, LRCLIB). Onda non invia altro.
+- *Impostazioni → Assistenza → Esporta rapporto errori* crea uno ZIP in locale, con versione, sistema e log recenti, senza dati della tua libreria. Non viene inviato da nessuna parte: controllalo prima di condividerlo.
 
 ## Segnalare un bug
 
-Scrivimi su **[Discord](https://discord.com/users/1007318097985798144)** (ID: `1007318097985798144`).
-Il collegamento apre il profilo: la possibilita di inviare messaggi dipende dalle impostazioni di Discord.
-Puoi aprirlo anche da **Impostazioni → Segnala un bug su Discord**.
+Scrivimi sul [server Discord](https://discord.gg/SE4Q9gt3j) o in privato (ID `1007318097985798144`), anche da *Impostazioni → Segnala un bug su Discord*. Indica:
 
-Per aiutarmi a riprodurre il problema, indica:
+- la versione di Onda e di Windows;
+- i passaggi per riprodurre il problema e cosa ti aspettavi;
+- il titolo, l'artista o il link del brano, se riguarda riproduzione o testi;
+- uno screenshot, se utile, senza dati personali.
 
-- versione di Onda e versione di Windows;
-- passaggi eseguiti e comportamento atteso;
-- titolo/artista o link del brano, se riguarda la riproduzione o i testi;
-- uno screenshot, se utile, evitando dati personali.
+## Limiti della beta
 
-## Correzioni nella beta 0.1.0-beta.5
+Catalogo, riproduzione e testi dipendono da servizi esterni: la disponibilità può cambiare e non tutti i brani hanno un testo sincronizzato. Onda non inventa i tempi mancanti. Sono possibili bug e rallentamenti di rete.
 
-Il cambio brano invalida i testi precedenti anche durante le animazioni. Il testo segue subito gli spostamenti nella barra temporale, avanti e indietro.
+Questo repository distribuisce **il programma e la documentazione**: il codice sorgente non è pubblicato. I componenti di terze parti conservano le proprie licenze, incluse nello ZIP.
 
-## Stato della beta
-
-Sono possibili bug e ritardi di rete. Catalogo, riproduzione e testi dipendono da servizi esterni:
-la disponibilita puo cambiare e alcuni testi non hanno timestamp. Onda preferisce testi sincronizzati
-compatibili con la versione del brano, senza inventare i tempi mancanti.
-
-Non e richiesto un account Onda. Playlist, preferiti, cronologia e impostazioni sono salvati
-localmente in `%LOCALAPPDATA%\OndaPlayer`. Il pacchetto distribuito non contiene librerie personali.
-Le ricerche e le richieste di riproduzione/testi vengono inviate ai rispettivi servizi esterni.
-
-Questo repository distribuisce **il programma e la documentazione**; il codice sorgente di Onda non e pubblicato.
-I componenti di terze parti conservano le proprie licenze, incluse nel pacchetto.
+---
 
 ## English
 
-Onda is a minimal Windows music player, currently in beta. Download the ZIP from
-[Releases](https://github.com/VoidAle/Onda/releases/tag/v0.1.0-beta.7), extract it, and run **Onda.exe**.
-Windows 10/11 x64 and an Internet connection are required. No Python or Node.js installation is needed.
+**Onda** is a minimal, fluid Windows music player with no account required. It is currently in beta.
 
-Features include artist profiles, albums, local playlists, favorites, listening history, a sleep timer,
-lyrics when available, album artwork, Windows media controls, light/dark themes and an English interface.
-Change the language in **Settings → Language**.
+**Install:** download **Onda-0.1.0-beta.8-windows-x64-final.zip** from the [release page](https://github.com/VoidAle/Onda/releases/tag/v0.1.0-beta.8), extract it and run **Onda.exe**. The standalone **Onda.exe** is also attached to the release. Windows 10/11 (64-bit) and an Internet connection are required; no Python or Node.js needed. The beta is not code-signed, so SmartScreen may ask for confirmation (*More info → Run anyway*). To update, close Onda and replace `Onda.exe`: your data stays in `%LOCALAPPDATA%\OndaPlayer`.
 
-Report bugs via **[Discord]([https://discord.gg/yAZKCjnS8])** and include the app version,
-Windows version, reproduction steps, and the affected song/link. Messaging availability depends on Discord settings.
-This is a binary-only beta release; source code is not published in this repository.
+**Features:** search the YouTube Music catalogue, queue and autoplay, an immersive listening view with synced lyrics and optional video, local playlists (reorder, search, de-duplicate, share with a code or a `.onda` file), playlist import from YouTube Music, Spotify, Apple Music and CSV/TXT/XML files, offline downloads, Wrapped listening statistics, favorites and history, sleep timer, Windows media controls, optional Discord activity, eleven themes and an Italian/English interface (*Settings → Language*). *Reduce animations* turns off all motion.
 
-Playlist imports: YouTube/YouTube Music public or unlisted links; exported CSV/TXT/XML files from Spotify, Apple Music and other services. Direct Spotify/Apple Music account integration is not available yet. Review matches before saving; uncertain matches are unchecked. Source order and selected duplicates are preserved.
+**Privacy:** no account, no telemetry. Library and settings stay on your computer. Searches, playback and lyrics go to the respective third-party services only.
 
-## Aggiornamento beta.5
+**Bugs:** report them on [Discord](https://discord.gg/SE4Q9gt3j) with the app version, Windows version, reproduction steps and the affected song or link.
 
-Solo copertine, vista testo senza sidebar con riga attiva visibile, card Home proporzionate, Discord automatico con logo/brano e pulsante download. Nessun ID o portale sviluppatori richiesto agli utenti.
-
-Recenti e playlist: gestione robusta di metadati vecchi/non validi e navigazione senza texture offscreen. Nessuna cancellazione della cronologia. In caso di errore i dettagli rimangono localmente in `%LOCALAPPDATA%\OndaPlayer\errors.log`.
-
-
-## Novità beta.6
-
-- Controllo aggiornamenti automatico all’avvio e ogni 6 ore, con avviso nell’app e pulsante download. Include le nuove beta; quando Onda sarà stabile seguirà soltanto le versioni stabili. Si può disattivare in Impostazioni → Aggiornamenti.
-- Il download si apre nel browser sullo ZIP ufficiale GitHub. Chiudi Onda, estrai lo ZIP e sostituisci l’eseguibile: nessun riavvio forzato o installazione silenziosa. Playlist, preferiti e cronologia restano in OndaPlayer.
-- Ricerca dentro le playlist per titolo, artista o album, anche senza accenti; trascina i brani per riordinarli e salvare l’ordine. Il riordino è disponibile con ricerca vuota. La coda già avviata conserva il suo ordine.
-- Duplicati: pulsante con conteggio, rimozione su conferma e annullamento durante la sessione. La verifica usa l’identità del brano, senza confondere remix o live omonimi.
-- Impostazioni → Assistenza → Esporta rapporto errori: ZIP locale con versione, sistema e log recenti, senza playlist, preferiti, cronologia o impostazioni. Identificativi comuni oscurati; controlla il contenuto prima di condividerlo. Nessun invio automatico.
-- Barra superiore nera come la navigazione. Testi con stati distinti: sincronizzato, semplice, strumentale, non disponibile o servizio temporaneamente irraggiungibile.
-
-Questa versione resta in beta e non introduce registrazione o account.
-
-
-## Correzione beta.7 — Preferiti e liste corte
-
-Corretto un blocco dell’interfaccia aprendo Preferiti o altre liste con pochi brani: lo spazio sotto il player causava un ciclo continuo di ridimensionamento della scrollbar. Lo spazio finale ora appartiene al contenuto della lista, senza fascia opaca e senza alterare il numero dei brani.
-La navigazione è accodata fuori dal clic Windows; Preferiti e Recenti si aprono direttamente e non avviano la preparazione audio automatica. Le chiamate ai controlli multimediali Windows sono accodate e protette dalla rientranza COM.
-Il rapporto errori include anche log locali dei blocchi prolungati, senza invio automatico. Playlist e preferiti conservati.
+This is a binary-only release: the source code is not published in this repository. Third-party components keep their own licenses, included in the ZIP.
