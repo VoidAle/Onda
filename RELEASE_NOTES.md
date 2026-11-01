@@ -1,3 +1,16 @@
+# Onda 0.1.0-beta.10
+
+- **Interfaccia ridisegnata**: barra laterale più spaziosa e ordinata, voce attiva evidenziata, passaggio del mouse morbido e coerente, Impostazioni a schede di vetro con caselle e menu rifiniti.
+- **Il tema resta il tuo**: riprodurre un brano non cambia più i colori dell'app. La copertina colora solo la vista di ascolto e il player in basso.
+- **Barra laterale riducibile**: il pulsante ☰ la riduce a sole icone e copertine delle playlist.
+- **Discord**: copertina del brano, nome dell'artista nel profilo e pulsante **Riproduci su Onda** che porta alla pagina GitHub di Onda.
+- **Riprende da dove eri**: chiudendo e riaprendo Onda restano coda, brano e punto di ascolto (in pausa).
+- **Videoclip rimossi**: la vista di ascolto mostra sempre la copertina dell'album.
+- **Testi sincronizzati** per più brani: nuova fonte di riserva oltre a LRCLIB e YouTube Music.
+- **Cambio tema più veloce** e ricerca più reattiva. Cercando il nome di un artista che è anche titolo di brani, compaiono sia l'artista sia i brani.
+
+Scarica **Onda-0.1.0-beta.10-windows-x64-final.zip**, estrailo e avvia Onda.exe. Windows 10/11 x64. Dati locali conservati, sorgenti privati, nessuna registrazione.
+
 # Onda 0.1.0-beta.8
 
 - Nuovo **Wrapped**: minuti di ascolto effettivi (i salti nella barra non contano) e classifiche di brani, artisti e album per mese, anno o da sempre, con riproduzione dei tuoi preferiti. Tutto resta sul computer.
