@@ -1,3 +1,20 @@
+# Onda 0.2.0
+
+- **Aggiornamento dentro Onda**: quando esce una nuova versione basta premere *Scarica aggiornamento*. Onda scarica il pacchetto, ne controlla l'integrità, ti chiede di riavviare e si aggiorna da sola. Se qualcosa non torna ti rimanda alla pagina della release.
+- **Radio e mix**: tasto destro su un brano → *Avvia radio da questo brano*. In Home trovi *Il tuo mix*, una radio costruita sui brani che ascolti di più, sui preferiti e sui recenti.
+- **Pagina artista più ricca**: riga *Artisti simili* e ordine degli album dal più recente o dal più vecchio.
+- **Mini-player** (Ctrl+M): una finestrella in vetro liquido, sempre in primo piano, con copertina, titolo e controlli.
+- **Tavolozza comandi** (Ctrl+K): cerca azioni, temi, timer, playlist e brani senza toccare il mouse.
+- **In sottofondo**: icona nell'area di notifica con i controlli; puoi far continuare la musica quando chiudi la finestra e avviare Onda con Windows (entrambi disattivati finché non li scegli).
+- **Backup e ripristino**: playlist, preferiti, cronologia, statistiche e impostazioni in un unico file ZIP (*Impostazioni → Backup e ripristino*).
+- **Coda più comoda**: trascina i brani di *A seguire* per riordinarli e salva la coda come playlist.
+- **Testi**: un clic su una riga sincronizzata porta la canzone a quel punto.
+- **Download più robusti**: se la rete cade riprovano da soli e ripuliscono i file incompleti.
+- **Dissolvenza tra i brani** (sperimentale, disattivata di default): *Impostazioni → Aspetto*.
+- **Rifiniture**: la barra laterale torna sulla voce giusta dopo una scorciatoia, nuove voci in inglese, elenco delle scorciatoie in *Impostazioni*.
+
+Scarica **Onda-0.2.0-windows-x64-final.zip**, estrailo e avvia Onda.exe. Windows 10/11 x64. Dati locali conservati, sorgenti privati, nessuna registrazione.
+
 # Onda 0.1.0-beta.10
 
 - **Riapertura senza sorprese**: quando riapri Onda il brano è lì, in pausa, con coda, playlist, casuale e ripeti come prima. Non partono più suggerimenti al posto della tua playlist e la ripartenza è più veloce (il link audio è già pronto al primo play).
