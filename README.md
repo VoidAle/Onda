@@ -2,8 +2,8 @@
 <h1 align="center">Onda</h1>
 <p align="center">Un lettore musicale per Windows: minimale, fluido e senza account.</p>
 <p align="center">
-  <a href="https://github.com/VoidAle/Onda/releases/download/v0.2.1/Onda-0.2.1-windows-x64-final.zip"><b>Scarica Onda 0.2.1</b></a> ·
-  <a href="https://github.com/VoidAle/Onda/releases/tag/v0.2.1">Novità</a> ·
+  <a href="https://github.com/VoidAle/Onda/releases/download/v0.2.2/Onda-0.2.2-windows-x64-final.zip"><b>Scarica Onda 0.2.2</b></a> ·
+  <a href="https://github.com/VoidAle/Onda/releases/tag/v0.2.2">Novità</a> ·
   <a href="https://discord.gg/SE4Q9gt3j">Segnala un bug</a>
 </p>
 
@@ -11,7 +11,7 @@
 
 ## Installazione
 
-1. Scarica **Onda-0.2.1-windows-x64-final.zip** dalla [pagina della release](https://github.com/VoidAle/Onda/releases/tag/v0.2.1).
+1. Scarica **Onda-0.2.2-windows-x64-final.zip** dalla [pagina della release](https://github.com/VoidAle/Onda/releases/tag/v0.2.2).
 2. Estrai lo ZIP in una cartella a tua scelta.
 3. Avvia **Onda.exe**. Non serve installare altro.
 
@@ -96,7 +96,7 @@ Questo repository distribuisce **il programma e la documentazione**: il codice s
 
 **Onda** is a minimal, fluid Windows music player with no account required. It is currently in beta.
 
-**Install:** from 0.2.0 on, Onda updates itself (*Download update* in the notice or in *Settings → Updates*). To install for the first time or move from an older beta, download **Onda-0.2.1-windows-x64-final.zip** from the [release page](https://github.com/VoidAle/Onda/releases/tag/v0.2.1), extract it and run **Onda.exe**. Do not download or move **Onda.exe** on its own. Windows 10/11 (64-bit) and an Internet connection are required; no Python or Node.js needed. The beta is not code-signed, so SmartScreen may ask for confirmation (*More info → Run anyway*). If Windows says an app control policy blocked the file: right-click the ZIP → *Properties* → *Unblock* **before** extracting, then run Onda.exe from the extracted folder. Your data stays in `%LOCALAPPDATA%\OndaPlayer`.
+**Install:** from 0.2.0 on, Onda updates itself (*Download update* in the notice or in *Settings → Updates*). To install for the first time or move from an older beta, download **Onda-0.2.2-windows-x64-final.zip** from the [release page](https://github.com/VoidAle/Onda/releases/tag/v0.2.2), extract it and run **Onda.exe**. Do not download or move **Onda.exe** on its own. Windows 10/11 (64-bit) and an Internet connection are required; no Python or Node.js needed. The beta is not code-signed, so SmartScreen may ask for confirmation (*More info → Run anyway*). If Windows says an app control policy blocked the file: right-click the ZIP → *Properties* → *Unblock* **before** extracting, then run Onda.exe from the extracted folder. Your data stays in `%LOCALAPPDATA%\OndaPlayer`.
 
 **Features:** search the YouTube Music catalogue, radio and a personal mix, similar artists, a floating mini player (Ctrl+M), a command palette (Ctrl+K), tray icon with background playback, backup and restore, experimental crossfade, queue and autoplay, an immersive listening view with synced lyrics and optional video, local playlists (reorder, search, de-duplicate, share with a code or a `.onda` file), playlist import from YouTube Music, Spotify, Apple Music and CSV/TXT/XML files, offline downloads, Wrapped listening statistics, favorites and history, sleep timer, Windows media controls, optional Discord activity, eleven themes and an Italian/English interface (*Settings → Language*). *Reduce animations* turns off all motion.
 

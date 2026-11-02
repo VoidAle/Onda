@@ -1,3 +1,12 @@
+# Onda 0.2.2
+
+- **Aggiornamento più sicuro**: se un antivirus teneva bloccato il file durante l'aggiornamento, Onda poteva sparire dalla cartella. Ora resta sempre una copia funzionante e, se la sostituzione non riesce, si riapre la versione precedente.
+- **Prova prima di installare**: dalla prossima versione in poi Onda avvia la nuova versione per controllarla prima di sostituire quella in uso. Se Windows Defender o un altro antivirus la blocca, Onda non viene modificata e lo dice.
+
+**Da sapere**: Onda non è firmata digitalmente, quindi Windows può ancora mostrare "Windows ha protetto il PC". Se il file viene dalla pagina ufficiale della release, scegli *Ulteriori informazioni → Esegui comunque*.
+
+Scarica **Onda-0.2.2-windows-x64-final.zip**, estrailo e avvia Onda.exe, oppure usa *Scarica aggiornamento* dentro Onda. Windows 10/11 x64. Dati locali conservati, sorgenti privati, nessuna registrazione.
+
 # Onda 0.2.1
 
 - **Sondaggio iniziale**: scegli generi, artisti e brani e Onda crea la tua playlist *Per te*. Propone artisti e brani italiani famosi, non la tua cronologia. Compare una volta sola e puoi saltarlo.
