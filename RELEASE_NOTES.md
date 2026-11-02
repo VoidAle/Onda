@@ -1,3 +1,24 @@
+# Onda 0.2.1
+
+- **Sondaggio iniziale**: scegli generi, artisti e brani e Onda crea la tua playlist *Per te*. Propone artisti e brani italiani famosi, non la tua cronologia. Compare una volta sola e puoi saltarlo.
+- **SoundCloud**: cerca e ascolta anche da SoundCloud, con il filtro nella ricerca o incollando un link. In "Tutto" i brani pertinenti si aggiungono in fondo. Le anteprime da 30 secondi non vengono mostrate.
+- **Link Spotify**: in *Importa playlist* ora basta incollare il link di una playlist pubblica, un album, un brano o un artista, senza account e senza file CSV. Di una playlist Spotify mostra al massimo i primi 100 brani.
+- **Trova da un file**: nella pagina Cerca scegli una canzone dal computer. Onda la cerca da titolo e artista scritti nel file o dal nome del file, e propone brani simili. Il file non viene inviato a nessuno.
+- **Wrapped da condividere**: *Esporta immagine* crea un'immagine verticale con minuti, artista preferito e brani più ascoltati.
+- **Link playlist**: copia un link `onda://` e mandalo a un amico, che lo incolla in *Importa playlist*.
+- **Intestazione a tendina**: in playlist e album trascina la maniglia per scegliere quanto spazio dare a copertina e titolo. Nelle finestre basse si compatta da sola.
+- **Aggiungi a playlist** anche dal mini-player e dall'area di notifica.
+- **Download visibili**: una pillola sopra il player mostra quanti brani stai scaricando.
+- **Home italiana**: chi ha pochi ascolti trova gli artisti italiani più famosi invece del feed mondiale. Dai brani in caratteri latini non arrivano più suggerimenti in altre scritture.
+- **Aggiorna suggerimenti** ora cambia davvero i brani.
+- **Molto più leggera**: il programma passa da 108 a 54 MB, occupa circa la metà di spazio mentre è aperto e usa meno memoria. Ridotta a icona restituisce quasi tutta la RAM a Windows. All'avvio toglie le vecchie copie temporanee rimaste nel disco, che potevano arrivare a diversi GB.
+- **Si apre a tutto schermo**.
+- **Impostazioni**: schede su una, due o tre colonne secondo lo spazio, con campi alti e leggibili.
+- **Grafica più nitida**: logo sempre nitido a ogni scala dello schermo, e in barra laterale le copertine non restano tagliate.
+- **Barra laterale**: resta evidenziata solo la pagina o la playlist aperta.
+
+Scarica **Onda-0.2.1-windows-x64-final.zip**, estrailo e avvia Onda.exe, oppure usa *Scarica aggiornamento* dentro Onda. Windows 10/11 x64. Dati locali conservati, sorgenti privati, nessuna registrazione.
+
 # Onda 0.2.0
 
 - **Aggiornamento dentro Onda**: quando esce una nuova versione basta premere *Scarica aggiornamento*. Onda scarica il pacchetto, ne controlla l'integrità, ti chiede di riavviare e si aggiorna da sola. Se qualcosa non torna ti rimanda alla pagina della release.
