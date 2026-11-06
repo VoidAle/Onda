@@ -1,3 +1,14 @@
+# Onda 0.2.3
+
+- **I miei brani**: nuova voce nella barra laterale. Carica i tuoi file audio dal computer con *Carica brani* o trascinandoli sulla finestra (mp3, m4a, flac, wav, ogg, opus e altri). Titolo, artista, album e copertina vengono letti dal file; se mancano, dal nome del file. Si ascoltano come gli altri brani, anche senza Internet, e si possono mettere in coda, nei preferiti e nelle playlist. Restano solo sul tuo PC: niente account, niente invii.
+- **Taglia inizio e fine**: dal menu **⋯** di qualsiasi brano scegli da dove partire e dove finire, anche con *Usa posizione attuale*. Perfetto per i caricamenti SoundCloud che iniziano dopo 30-40 secondi di silenzio. Il file non viene modificato e il taglio resta salvato per quel brano.
+- **Esporta file**: copia sul computer un brano scaricato o caricato, per modificarlo con un altro programma e ricaricarlo in *I miei brani*.
+- **Set SoundCloud**: incollando in Cerca il link di un set (playlist) SoundCloud si apre l'intero set, non solo il primo brano. Puoi riprodurlo tutto o salvarlo come playlist di Onda. Le anteprime da 30 secondi del set sono segnalate.
+- **Radio dai tuoi brani**: dalla radio di un brano caricato Onda cerca brani simili usando solo titolo e artista.
+- **Corretto**: alcuni brani SoundCloud, riaperti qualche minuto dopo, davano "Could not open this file". Onda ora rinnova il link quando scade.
+
+Scarica **Onda-0.2.3-windows-x64-final.zip**, estrailo e avvia Onda.exe, oppure usa *Scarica aggiornamento* dentro Onda. Windows 10/11 x64. Dati locali conservati, sorgenti privati, nessuna registrazione.
+
 # Onda 0.2.2
 
 - **Aggiornamento più sicuro**: se un antivirus teneva bloccato il file durante l'aggiornamento, Onda poteva sparire dalla cartella. Ora resta sempre una copia funzionante e, se la sostituzione non riesce, si riapre la versione precedente.

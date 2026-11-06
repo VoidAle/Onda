@@ -2,8 +2,8 @@
 <h1 align="center">Onda</h1>
 <p align="center">Un lettore musicale per Windows: minimale, fluido e senza account.</p>
 <p align="center">
-  <a href="https://github.com/VoidAle/Onda/releases/download/v0.2.2/Onda-0.2.2-windows-x64-final.zip"><b>Scarica Onda 0.2.2</b></a> ·
-  <a href="https://github.com/VoidAle/Onda/releases/tag/v0.2.2">Novità</a> ·
+  <a href="https://github.com/VoidAle/Onda/releases/download/v0.2.3/Onda-0.2.3-windows-x64-final.zip"><b>Scarica Onda 0.2.3</b></a> ·
+  <a href="https://github.com/VoidAle/Onda/releases/tag/v0.2.3">Novità</a> ·
   <a href="https://discord.gg/SE4Q9gt3j">Segnala un bug</a>
 </p>
 
@@ -11,7 +11,7 @@
 
 ## Installazione
 
-1. Scarica **Onda-0.2.2-windows-x64-final.zip** dalla [pagina della release](https://github.com/VoidAle/Onda/releases/tag/v0.2.2).
+1. Scarica **Onda-0.2.3-windows-x64-final.zip** dalla [pagina della release](https://github.com/VoidAle/Onda/releases/tag/v0.2.3).
 2. Estrai lo ZIP in una cartella a tua scelta.
 3. Avvia **Onda.exe**. Non serve installare altro.
 
@@ -41,7 +41,10 @@ La beta non è firmata digitalmente (la firma richiede un certificato a pagament
 - **Backup e ripristino** di playlist, preferiti, cronologia e impostazioni in un file ZIP.
 - **Sondaggio iniziale**: scegli generi, artisti e brani e Onda crea la tua playlist *Per te*.
 - **Playlist locali**: crea, riordina trascinando, cerca all'interno, rimuovi i duplicati, scegli un'immagine, condividi con un link `onda://`, un codice o un file `.onda`.
-- **SoundCloud**: cerca e ascolta anche da SoundCloud, con il filtro dedicato o incollando un link.
+- **SoundCloud**: cerca e ascolta anche da SoundCloud, con il filtro dedicato o incollando il link di un brano o di un intero set (playlist).
+- **I miei brani**: carica i tuoi file audio dal computer (pulsante *Carica brani* o trascinandoli sulla finestra) e ascoltali come gli altri, anche senza Internet. Restano solo sul tuo PC, senza account.
+- **Taglia inizio e fine** di qualsiasi brano dal menu **⋯**: utile per i caricamenti che partono dopo 30-40 secondi di silenzio. Il file non viene modificato.
+- **Esporta file**: copia sul computer un brano scaricato o caricato, per modificarlo e ricaricarlo.
 - **Importa** playlist da link Spotify e YouTube Music, da Apple Music e da file CSV, TXT o XML.
 - **Trova da un file**: scegli una canzone dal computer e Onda la cerca dal titolo e dall'artista nel file, o ti propone brani simili.
 - **Ascolto offline**: scarica brani o intere playlist e riproducili senza Internet.
@@ -73,6 +76,7 @@ I link di Apple Music non si importano direttamente: usa il file esportato. Ness
 - Playlist, preferiti, cronologia, statistiche e impostazioni restano sul tuo computer, in `%LOCALAPPDATA%\OndaPlayer`.
 - Ricerche, riproduzione e testi sono richieste ai rispettivi servizi esterni (YouTube Music, SoundCloud, LRCLIB). I link che importi vengono aperti su Spotify. Onda non invia altro.
 - *Trova da un file* legge solo titolo, artista e durata dal file sul tuo computer e li usa per la ricerca: il file non viene inviato a nessuno.
+- *I miei brani*: i file che carichi vengono copiati in `%LOCALAPPDATA%\OndaPlayer\uploads` e non vengono inviati a nessuno. Per la radio da un tuo brano Onda usa solo titolo e artista.
 - *Impostazioni → Assistenza → Esporta rapporto errori* crea uno ZIP in locale, con versione, sistema e log recenti, senza dati della tua libreria. Non viene inviato da nessuna parte: controllalo prima di condividerlo.
 
 ## Segnalare un bug
@@ -86,7 +90,7 @@ Scrivimi sul [server Discord](https://discord.gg/SE4Q9gt3j) o in privato (ID `10
 
 ## Limiti della beta
 
-Catalogo, riproduzione e testi dipendono da servizi esterni: la disponibilità può cambiare e non tutti i brani hanno un testo sincronizzato. Su SoundCloud molte etichette offrono solo 30 secondi: quei brani non vengono mostrati. Onda non inventa i tempi mancanti. Sono possibili bug e rallentamenti di rete.
+Catalogo, riproduzione e testi dipendono da servizi esterni: la disponibilità può cambiare e non tutti i brani hanno un testo sincronizzato. Su SoundCloud molte etichette offrono solo 30 secondi: quei brani non compaiono nella ricerca; dentro un set restano, segnalati. Onda non inventa i tempi mancanti. Sono possibili bug e rallentamenti di rete.
 
 Questo repository distribuisce **il programma e la documentazione**: il codice sorgente non è pubblicato. I componenti di terze parti conservano le proprie licenze, incluse nello ZIP.
 
@@ -96,11 +100,11 @@ Questo repository distribuisce **il programma e la documentazione**: il codice s
 
 **Onda** is a minimal, fluid Windows music player with no account required. It is currently in beta.
 
-**Install:** from 0.2.0 on, Onda updates itself (*Download update* in the notice or in *Settings → Updates*). To install for the first time or move from an older beta, download **Onda-0.2.2-windows-x64-final.zip** from the [release page](https://github.com/VoidAle/Onda/releases/tag/v0.2.2), extract it and run **Onda.exe**. Do not download or move **Onda.exe** on its own. Windows 10/11 (64-bit) and an Internet connection are required; no Python or Node.js needed. The beta is not code-signed, so SmartScreen may ask for confirmation (*More info → Run anyway*). If Windows says an app control policy blocked the file: right-click the ZIP → *Properties* → *Unblock* **before** extracting, then run Onda.exe from the extracted folder. Your data stays in `%LOCALAPPDATA%\OndaPlayer`.
+**Install:** from 0.2.0 on, Onda updates itself (*Download update* in the notice or in *Settings → Updates*). To install for the first time or move from an older beta, download **Onda-0.2.3-windows-x64-final.zip** from the [release page](https://github.com/VoidAle/Onda/releases/tag/v0.2.3), extract it and run **Onda.exe**. Do not download or move **Onda.exe** on its own. Windows 10/11 (64-bit) and an Internet connection are required; no Python or Node.js needed. The beta is not code-signed, so SmartScreen may ask for confirmation (*More info → Run anyway*). If Windows says an app control policy blocked the file: right-click the ZIP → *Properties* → *Unblock* **before** extracting, then run Onda.exe from the extracted folder. Your data stays in `%LOCALAPPDATA%\OndaPlayer`.
 
-**Features:** search the YouTube Music catalogue, radio and a personal mix, similar artists, a floating mini player (Ctrl+M), a command palette (Ctrl+K), tray icon with background playback, backup and restore, experimental crossfade, queue and autoplay, an immersive listening view with synced lyrics and optional video, local playlists (reorder, search, de-duplicate, share with a code or a `.onda` file), playlist import from YouTube Music, Spotify, Apple Music and CSV/TXT/XML files, offline downloads, Wrapped listening statistics, favorites and history, sleep timer, Windows media controls, optional Discord activity, eleven themes and an Italian/English interface (*Settings → Language*). *Reduce animations* turns off all motion.
+**Features:** search the YouTube Music catalogue, radio and a personal mix, similar artists, a floating mini player (Ctrl+M), a command palette (Ctrl+K), tray icon with background playback, backup and restore, experimental crossfade, queue and autoplay, an immersive listening view with synced lyrics and optional video, local playlists (reorder, search, de-duplicate, share with a code or a `.onda` file), *My tracks* (upload your own audio files, local only, drag and drop supported), per-track start/end trimming to skip long silences, file export, SoundCloud sets from a link, playlist import from YouTube Music, Spotify, Apple Music and CSV/TXT/XML files, offline downloads, Wrapped listening statistics, favorites and history, sleep timer, Windows media controls, optional Discord activity, eleven themes and an Italian/English interface (*Settings → Language*). *Reduce animations* turns off all motion.
 
-**Privacy:** no account, no telemetry. Library and settings stay on your computer. Searches, playback and lyrics go to the respective third-party services only, including SoundCloud; imported Spotify links are opened on Spotify. Files you pick for *Find from a file* are never uploaded.
+**Privacy:** no account, no telemetry. Library and settings stay on your computer. Searches, playback and lyrics go to the respective third-party services only, including SoundCloud; imported Spotify links are opened on Spotify. Files you pick for *Find from a file* or add to *My tracks* are never uploaded.
 
 **Bugs:** report them on [Discord](https://discord.gg/SE4Q9gt3j) with the app version, Windows version, reproduction steps and the affected song or link.
 
