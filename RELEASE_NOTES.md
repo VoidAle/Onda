@@ -5,7 +5,9 @@
 - **Esporta file**: copia sul computer un brano scaricato o caricato, per modificarlo con un altro programma e ricaricarlo in *I miei brani*.
 - **Set SoundCloud**: incollando in Cerca il link di un set (playlist) SoundCloud si apre l'intero set, non solo il primo brano. Puoi riprodurlo tutto o salvarlo come playlist di Onda. Le anteprime da 30 secondi del set sono segnalate.
 - **Radio dai tuoi brani**: dalla radio di un brano caricato Onda cerca brani simili usando solo titolo e artista.
+- **SoundCloud sempre pronto**: i brani SoundCloud che ascolti o salvi in una playlist vengono scaricati da soli la prima volta. Poi partono subito, anche offline, senza chiedere ogni volta un nuovo link a SoundCloud (circa 3 MB a brano, li trovi in *Scaricati*). Si disattiva in *Impostazioni → Ascolto offline*.
 - **Corretto**: alcuni brani SoundCloud, riaperti qualche minuto dopo, davano "Could not open this file". Onda ora rinnova il link quando scade.
+- **Aggiornamenti più attenti**: Onda si accorge anche di una nuova build pubblicata con lo stesso numero di versione.
 
 Scarica **Onda-0.2.3-windows-x64-final.zip**, estrailo e avvia Onda.exe, oppure usa *Scarica aggiornamento* dentro Onda. Windows 10/11 x64. Dati locali conservati, sorgenti privati, nessuna registrazione.
 
