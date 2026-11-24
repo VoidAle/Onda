@@ -2,8 +2,8 @@
 <h1 align="center">Onda</h1>
 <p align="center">Un lettore musicale per Windows: minimale, fluido e senza account.</p>
 <p align="center">
-  <a href="https://github.com/VoidAle/Onda/releases/download/v0.2.3/Onda-0.2.3-windows-x64-final.zip"><b>Scarica Onda 0.2.3</b></a> ·
-  <a href="https://github.com/VoidAle/Onda/releases/tag/v0.2.3">Novità</a> ·
+  <a href="https://github.com/VoidAle/Onda/releases/latest/download/Onda-Setup.exe"><b>Scarica Onda</b></a> ·
+  <a href="https://github.com/VoidAle/Onda/releases/latest">Novità</a> ·
   <a href="https://discord.gg/SE4Q9gt3j">Segnala un bug</a>
 </p>
 
@@ -11,22 +11,24 @@
 
 ## Installazione
 
-1. Scarica **Onda-0.2.3-windows-x64-final.zip** dalla [pagina della release](https://github.com/VoidAle/Onda/releases/tag/v0.2.3).
-2. Estrai lo ZIP in una cartella a tua scelta.
-3. Avvia **Onda.exe**. Non serve installare altro.
+1. Scarica **[Onda-Setup.exe](https://github.com/VoidAle/Onda/releases/latest/download/Onda-Setup.exe)**.
+2. Aprilo e segui la procedura: Onda si installa per il tuo utente, senza permessi di amministratore, e compare nel menu Start.
+3. Non serve installare altro. Per disinstallare: *Impostazioni → App → Onda*.
+
+Preferisci la versione portatile? Nella [pagina della release](https://github.com/VoidAle/Onda/releases/latest) c'è anche lo ZIP: estrailo e avvia **Onda.exe**.
 
 **Requisiti:** Windows 10 o 11 a 64 bit e una connessione Internet. La beta non è firmata digitalmente, quindi Windows può mostrare un avviso di SmartScreen: scegli *Ulteriori informazioni → Esegui comunque*.
 
-**Aggiornare:** dalla 0.2.0 Onda si aggiorna da sola: quando c'è una nuova versione premi *Scarica aggiornamento*, Onda controlla il pacchetto e si riavvia aggiornata. Playlist, preferiti e impostazioni restano al loro posto. Il controllo automatico si disattiva in *Impostazioni → Aggiornamenti*. Per passare alla 0.2.0 da una beta precedente (che non si aggiorna da sola) chiudi Onda, estrai la nuova versione e sostituisci `Onda.exe`.
+**Aggiornare:** dalla 0.2.0 Onda si aggiorna da sola: quando c'è una nuova versione premi *Scarica aggiornamento*, Onda controlla il pacchetto e si riavvia aggiornata. Playlist, preferiti e impostazioni restano al loro posto. Il controllo automatico si disattiva in *Impostazioni → Aggiornamenti*. Le beta precedenti alla 0.2.0 non si aggiornano da sole: installa con **Onda-Setup.exe**, i tuoi dati restano.
 
 ## Windows blocca il file?
 
 Se compare «Un criterio di controllo delle applicazioni ha bloccato questo file» o «estensione di file pericolosa dal web»:
 
-1. Non scaricare né spostare **Onda.exe** da solo: scarica sempre lo **ZIP** della release.
-2. Prima di estrarlo: tasto destro sullo ZIP → **Proprietà** → spunta **Sblocca** → OK. Poi **Estrai tutto**.
-3. Avvia **Onda.exe** dalla cartella estratta, senza copiarlo altrove (lascia la cartella com'è e crea un collegamento sul Desktop con tasto destro → *Invia a → Desktop*).
-4. In alternativa, da PowerShell nella cartella dello ZIP: `Get-ChildItem *.zip | Unblock-File`.
+1. Non scaricare né spostare **Onda.exe** da solo: usa **Onda-Setup.exe** (o lo **ZIP** della release).
+2. Prima di aprirlo: tasto destro su **Onda-Setup.exe** (o sullo ZIP) → **Proprietà** → spunta **Sblocca** → OK. Con lo ZIP, poi **Estrai tutto**.
+3. Con lo ZIP, avvia **Onda.exe** dalla cartella estratta, senza copiarlo altrove (crea un collegamento sul Desktop con tasto destro → *Invia a → Desktop*).
+4. In alternativa, da PowerShell nella cartella del download: `Get-ChildItem Onda-Setup.exe, *.zip | Unblock-File`.
 
 La beta non è firmata digitalmente (la firma richiede un certificato a pagamento): con **Smart App Control** attivo Windows può comunque bloccare programmi non firmati; in quel caso l'unica via è disattivarlo in *Sicurezza di Windows → Controllo app e browser → Smart App Control*.
 
@@ -100,7 +102,7 @@ Questo repository distribuisce **il programma e la documentazione**: il codice s
 
 **Onda** is a minimal, fluid Windows music player with no account required. It is currently in beta.
 
-**Install:** from 0.2.0 on, Onda updates itself (*Download update* in the notice or in *Settings → Updates*). To install for the first time or move from an older beta, download **Onda-0.2.3-windows-x64-final.zip** from the [release page](https://github.com/VoidAle/Onda/releases/tag/v0.2.3), extract it and run **Onda.exe**. Do not download or move **Onda.exe** on its own. Windows 10/11 (64-bit) and an Internet connection are required; no Python or Node.js needed. The beta is not code-signed, so SmartScreen may ask for confirmation (*More info → Run anyway*). If Windows says an app control policy blocked the file: right-click the ZIP → *Properties* → *Unblock* **before** extracting, then run Onda.exe from the extracted folder. Your data stays in `%LOCALAPPDATA%\OndaPlayer`.
+**Install:** from 0.2.0 on, Onda updates itself (*Download update* in the notice or in *Settings → Updates*). To install for the first time or move from an older beta, download and run **[Onda-Setup.exe](https://github.com/VoidAle/Onda/releases/latest/download/Onda-Setup.exe)**: it installs for your user only (no admin rights) and adds Onda to the Start menu. A portable ZIP is also on the [release page](https://github.com/VoidAle/Onda/releases/latest). Do not download or move **Onda.exe** on its own. Windows 10/11 (64-bit) and an Internet connection are required; no Python or Node.js needed. The beta is not code-signed, so SmartScreen may ask for confirmation (*More info → Run anyway*). If Windows says an app control policy blocked the file: right-click Onda-Setup.exe (or the ZIP) → *Properties* → *Unblock* **before** opening it. Your data stays in `%LOCALAPPDATA%\OndaPlayer`.
 
 **Features:** search the YouTube Music catalogue, radio and a personal mix, similar artists, a floating mini player (Ctrl+M), a command palette (Ctrl+K), tray icon with background playback, backup and restore, experimental crossfade, queue and autoplay, an immersive listening view with synced lyrics and optional video, local playlists (reorder, search, de-duplicate, share with a code or a `.onda` file), *My tracks* (upload your own audio files, local only, drag and drop supported), per-track start/end trimming to skip long silences, file export, SoundCloud sets from a link (SoundCloud tracks you play or save are downloaded automatically, optional), playlist import from YouTube Music, Spotify, Apple Music and CSV/TXT/XML files, offline downloads, Wrapped listening statistics, favorites and history, sleep timer, Windows media controls, optional Discord activity, eleven themes and an Italian/English interface (*Settings → Language*). *Reduce animations* turns off all motion.
 
