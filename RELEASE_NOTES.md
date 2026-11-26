@@ -1,3 +1,39 @@
+# Onda 0.6.0
+
+Onda è stata riscritta da zero. È più leggera, si apre prima, fa partire i brani più in fretta e, per la prima volta, funziona anche su **macOS** e **Linux**.
+
+**Scarica**
+
+| Sistema | File |
+| --- | --- |
+| Windows 10/11 (64 bit) | **Onda-Setup.exe** |
+| macOS 10.15+ (Apple Silicon e Intel) — sperimentale | **Onda-macOS.dmg** |
+| Linux 64 bit — sperimentale | **Onda-Linux.deb** (Ubuntu, Debian, Mint) · **Onda-Linux.rpm** (Fedora) · **Onda-Linux.AppImage** (tutte) |
+
+Le istruzioni per ogni sistema, compresi gli avvisi di SmartScreen e Gatekeeper, sono nel [README](https://github.com/VoidAle/Onda#readme). Le versioni macOS e Linux vengono compilate e avviate in automatico, ma non sono ancora state usate a lungo su computer veri: se qualcosa non va, scrivimi su [Discord](https://discord.gg/SE4Q9gt3j).
+
+**Se avevi Onda 0.2.x su Windows:** installa Onda-Setup.exe. La vecchia Onda viene rimossa da sola. Playlist, preferiti, recenti, tagli, cronologia d'ascolto e brani scaricati vengono importati al primo avvio, e i vecchi dati in `%LOCALAPPDATA%\OndaPlayer` restano intatti. La 0.2.x non propone questo aggiornamento da sola.
+
+## Novità
+
+- **Più veloce**: i brani di YouTube Music partono prima e l'indirizzo audio resta in memoria tra un avvio e l'altro. I brani SoundCloud disponibili solo in streaming segmentato ora si ascoltano.
+- **Incolla un link** nella ricerca (YouTube, YouTube Music, SoundCloud, Spotify) per aprire brani, album, set e playlist.
+- **Importa playlist** da link o da file `.onda`, CSV (anche Exportify), TXT, XML (iTunes/XSPF) e M3U. Condividi le tue come file `.onda`.
+- **Playlist**: riordino trascinando, selezione multipla, copertina personalizzata, pulizia dei duplicati.
+- **Questionario iniziale** e playlist *Per te*; Home con brani e artisti da scoprire; «Non consigliare questo brano/artista».
+- **Mini-player** nuovo con il testo che scorre a tempo (Ctrl+M, scorciatoia modificabile).
+- **Area di notifica**, musica in sottofondo a finestra chiusa e avvio all'accesso.
+- **Timer di spegnimento**, dissolvenza a inizio e fine brano, temi Nero (OLED) e Notte, *Riduci animazioni*, interfaccia in inglese.
+- **Backup e ripristino** da *Impostazioni → Dati* e rapporto errori da copiare.
+- **Statistiche più sicure**: un file delle statistiche danneggiato non cancella più lo storico.
+- Riaprire Onda mostra la finestra già aperta invece di avviarne una seconda.
+
+## Ancora da portare dalla 0.2
+
+Aggiornamento automatico, link `onda://` e codici di condivisione, tavolozza comandi (Ctrl+K), video nella vista di ascolto, *Trova da un file*, *Esporta file*, import diretto da Apple Music e temi colorati. Fino ad allora gli aggiornamenti si scaricano da questa pagina.
+
+Onda non è firmata digitalmente. Nessun account, nessuna registrazione, dati solo sul tuo computer. Verifica i download con `SHA256SUMS.txt`.
+
 # Onda 0.2.3
 
 - **I miei brani**: nuova voce nella barra laterale. Carica i tuoi file audio dal computer con *Carica brani* o trascinandoli sulla finestra (mp3, m4a, flac, wav, ogg, opus e altri). Titolo, artista, album e copertina vengono letti dal file; se mancano, dal nome del file. Si ascoltano come gli altri brani, anche senza Internet, e si possono mettere in coda, nei preferiti e nelle playlist. Restano solo sul tuo PC: niente account, niente invii.

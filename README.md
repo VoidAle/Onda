@@ -1,113 +1,164 @@
 <p align="center"><img src="assets/onda.png" width="96" alt="Onda"></p>
 <h1 align="center">Onda</h1>
-<p align="center">Un lettore musicale per Windows: minimale, fluido e senza account.</p>
+<p align="center">Un lettore musicale minimale e fluido, senza account. Per Windows, macOS e Linux.</p>
 <p align="center">
-  <a href="https://github.com/VoidAle/Onda/releases/latest/download/Onda-Setup.exe"><b>Scarica Onda</b></a> ·
+  <a href="https://github.com/VoidAle/Onda/releases/latest/download/Onda-Setup.exe"><b>Scarica per Windows</b></a> ·
+  <a href="https://github.com/VoidAle/Onda/releases/latest/download/Onda-macOS.dmg"><b>macOS</b></a> ·
+  <a href="#linux"><b>Linux</b></a> ·
   <a href="https://github.com/VoidAle/Onda/releases/latest">Novità</a> ·
   <a href="https://discord.gg/SE4Q9gt3j">Segnala un bug</a>
 </p>
 
 ---
 
-## Installazione
+Onda cerca e riproduce musica dal catalogo di YouTube Music e da SoundCloud, insieme ai tuoi file audio. Playlist, preferiti e statistiche restano sul tuo computer: niente account, niente pubblicità, niente registrazione.
 
-1. Scarica **[Onda-Setup.exe](https://github.com/VoidAle/Onda/releases/latest/download/Onda-Setup.exe)**.
-2. Aprilo e segui la procedura: Onda si installa per il tuo utente, senza permessi di amministratore, e compare nel menu Start.
-3. Non serve installare altro. Per disinstallare: *Impostazioni → App → Onda*.
+Dalla **0.6.0** Onda è stata riscritta da zero: è più leggera, si apre prima, fa partire i brani più in fretta e funziona anche su macOS e Linux.
 
-Preferisci la versione portatile? Nella [pagina della release](https://github.com/VoidAle/Onda/releases/latest) c'è anche lo ZIP: estrailo e avvia **Onda.exe**.
+| Sistema | File | Stato |
+| --- | --- | --- |
+| Windows 10 e 11 (64 bit) | [Onda-Setup.exe](https://github.com/VoidAle/Onda/releases/latest/download/Onda-Setup.exe) | Stabile |
+| macOS 10.15 o successivo (Apple Silicon e Intel) | [Onda-macOS.dmg](https://github.com/VoidAle/Onda/releases/latest/download/Onda-macOS.dmg) | Sperimentale |
+| Linux 64 bit (Ubuntu 22.04+, Debian 12+, Fedora…) | [.deb](https://github.com/VoidAle/Onda/releases/latest/download/Onda-Linux.deb) · [.rpm](https://github.com/VoidAle/Onda/releases/latest/download/Onda-Linux.rpm) · [AppImage](https://github.com/VoidAle/Onda/releases/latest/download/Onda-Linux.AppImage) | Sperimentale |
 
-**Requisiti:** Windows 10 o 11 a 64 bit e una connessione Internet. La beta non è firmata digitalmente, quindi Windows può mostrare un avviso di SmartScreen: scegli *Ulteriori informazioni → Esegui comunque*.
+**Sperimentale** significa che la versione per quel sistema viene compilata e avviata in automatico a ogni release, ma non è ancora stata usata a lungo su computer veri. Se qualcosa non va, [scrivimi su Discord](#segnalare-un-bug): mi aiuti a renderla stabile.
 
-**Aggiornare:** dalla 0.2.0 Onda si aggiorna da sola: quando c'è una nuova versione premi *Scarica aggiornamento*, Onda controlla il pacchetto e si riavvia aggiornata. Playlist, preferiti e impostazioni restano al loro posto. Il controllo automatico si disattiva in *Impostazioni → Aggiornamenti*. Le beta precedenti alla 0.2.0 non si aggiornano da sole: installa con **Onda-Setup.exe**, i tuoi dati restano.
+Serve sempre una connessione Internet, tranne per i brani scaricati e per i tuoi file.
 
-## Windows blocca il file?
+## Windows
 
-Se compare «Un criterio di controllo delle applicazioni ha bloccato questo file» o «estensione di file pericolosa dal web»:
+1. Scarica **[Onda-Setup.exe](https://github.com/VoidAle/Onda/releases/latest/download/Onda-Setup.exe)** e aprilo.
+2. Segui la procedura. Onda si installa solo per il tuo utente, senza permessi di amministratore, e compare nel menu Start e sul Desktop.
+3. Per disinstallarla: *Impostazioni → App → App installate → Onda → Disinstalla*.
 
-1. Non scaricare né spostare **Onda.exe** da solo: usa **Onda-Setup.exe** (o lo **ZIP** della release).
-2. Prima di aprirlo: tasto destro su **Onda-Setup.exe** (o sullo ZIP) → **Proprietà** → spunta **Sblocca** → OK. Con lo ZIP, poi **Estrai tutto**.
-3. Con lo ZIP, avvia **Onda.exe** dalla cartella estratta, senza copiarlo altrove (crea un collegamento sul Desktop con tasto destro → *Invia a → Desktop*).
-4. In alternativa, da PowerShell nella cartella del download: `Get-ChildItem Onda-Setup.exe, *.zip | Unblock-File`.
+**Se avevi Onda 0.2.x:** installa la 0.6.0 come una versione nuova. L'installazione rimuove da sola la vecchia Onda, così non ne restano due. Al primo avvio la nuova Onda importa playlist, preferiti, recenti, tagli dei brani, cronologia d'ascolto e brani scaricati. I dati della versione precedente in `%LOCALAPPDATA%\OndaPlayer` non vengono modificati né cancellati. La vecchia Onda non propone questo aggiornamento da sola: va scaricato una volta da qui.
 
-La beta non è firmata digitalmente (la firma richiede un certificato a pagamento): con **Smart App Control** attivo Windows può comunque bloccare programmi non firmati; in quel caso l'unica via è disattivarlo in *Sicurezza di Windows → Controllo app e browser → Smart App Control*.
+### Windows blocca il file?
+
+Onda non è firmata digitalmente, perché la firma richiede un certificato a pagamento. Per questo Windows può chiedere una conferma.
+
+- **«Windows ha protetto il PC» (SmartScreen):** scegli *Ulteriori informazioni → Esegui comunque*.
+- **«Un criterio di controllo delle applicazioni ha bloccato questo file»:** prima di aprirlo fai tasto destro su **Onda-Setup.exe** → *Proprietà* → spunta **Sblocca** → *OK*. In alternativa, da PowerShell nella cartella del download: `Unblock-File .\Onda-Setup.exe`.
+- **Smart App Control attivo:** può bloccare comunque i programmi non firmati. L'unica via è disattivarlo in *Sicurezza di Windows → Controllo app e browser → Smart App Control*.
+
+## macOS
+
+> Versione sperimentale.
+
+1. Scarica **[Onda-macOS.dmg](https://github.com/VoidAle/Onda/releases/latest/download/Onda-macOS.dmg)**, aprilo e trascina **Onda** nella cartella **Applicazioni**.
+2. Apri Onda dalla cartella Applicazioni. Al primo avvio macOS dice che non può verificare lo sviluppatore, perché Onda non è registrata presso Apple (serve un abbonamento a pagamento). Per aprirla:
+   - **macOS 15 Sequoia o successivo:** chiudi l'avviso, poi vai in *Impostazioni di Sistema → Privacy e sicurezza*, scorri in basso e premi **Apri comunque** accanto a Onda. Conferma con la password.
+   - **macOS 14 o precedente:** tasto destro (o Ctrl+clic) su Onda → **Apri** → **Apri**.
+3. Basta farlo la prima volta.
+
+Se compare **«Onda è danneggiata e non può essere aperta»**, apri il Terminale ed esegui:
+
+```sh
+xattr -dr com.apple.quarantine /Applications/Onda.app
+```
+
+Il comando toglie solo il contrassegno «scaricato da Internet»; poi Onda si apre normalmente. Per disinstallarla, trascina Onda dalla cartella Applicazioni nel Cestino.
+
+## Linux
+
+> Versione sperimentale. Serve un sistema a 64 bit (x86_64) con WebKitGTK 4.1: Ubuntu 22.04 o successivo, Debian 12 o successivo, Linux Mint 21 o successivo, Fedora e derivate.
+
+**Ubuntu, Debian, Linux Mint** — scarica [Onda-Linux.deb](https://github.com/VoidAle/Onda/releases/latest/download/Onda-Linux.deb), poi nella cartella del download:
+
+```sh
+sudo apt install ./Onda-Linux.deb
+```
+
+**Fedora** — scarica [Onda-Linux.rpm](https://github.com/VoidAle/Onda/releases/latest/download/Onda-Linux.rpm), poi:
+
+```sh
+sudo dnf install ./Onda-Linux.rpm
+```
+
+**Qualsiasi distribuzione (AppImage, senza installazione)** — scarica [Onda-Linux.AppImage](https://github.com/VoidAle/Onda/releases/latest/download/Onda-Linux.AppImage), poi:
+
+```sh
+chmod +x Onda-Linux.AppImage
+./Onda-Linux.AppImage
+```
+
+Se l'AppImage non parte e cita FUSE, installa `libfuse2` (su Ubuntu 24.04: `sudo apt install libfuse2t64`).
+
+Con .deb e .rpm Onda compare nel menu delle applicazioni. Per disinstallarla: `sudo apt remove onda` oppure `sudo dnf remove onda`. L'icona nell'area di notifica dipende dall'ambiente desktop: su GNOME serve l'estensione *AppIndicator*.
+
+## Aggiornare
+
+Onda 0.6 non si aggiorna ancora da sola. Quando esce una versione nuova, la trovi nella pagina [Novità](https://github.com/VoidAle/Onda/releases/latest) e nel [server Discord](https://discord.gg/SE4Q9gt3j). Scarica il file per il tuo sistema e installalo sopra quello che hai: playlist, preferiti e impostazioni restano al loro posto.
 
 ## Cosa fa
 
-- **Cerca** brani, artisti, album e playlist nel catalogo YouTube Music, anche mentre scrivi.
-- **Ascolta** con coda, casuale, ripetizione e suggerimenti simili che continuano la musica quando finisce la playlist.
-- **Vista di ascolto** con copertina grande, testo sincronizzato quando disponibile (un clic su una riga porta la canzone a quel punto).
-- **Radio e mix**: avvia una radio da qualsiasi brano e ascolta *Il tuo mix*, costruito sui tuoi ascolti. Nella pagina di un artista trovi gli artisti simili.
-- **Mini-player** sempre in primo piano (Ctrl+M) e **tavolozza comandi** (Ctrl+K) per fare tutto da tastiera.
-- **In sottofondo**: icona nell'area di notifica, musica che continua quando chiudi la finestra e avvio con Windows, se lo vuoi.
-- **Backup e ripristino** di playlist, preferiti, cronologia e impostazioni in un file ZIP.
-- **Sondaggio iniziale**: scegli generi, artisti e brani e Onda crea la tua playlist *Per te*.
-- **Playlist locali**: crea, riordina trascinando, cerca all'interno, rimuovi i duplicati, scegli un'immagine, condividi con un link `onda://`, un codice o un file `.onda`.
-- **SoundCloud**: cerca e ascolta anche da SoundCloud, con il filtro dedicato o incollando il link di un brano o di un intero set (playlist).
-- **I miei brani**: carica i tuoi file audio dal computer (pulsante *Carica brani* o trascinandoli sulla finestra) e ascoltali come gli altri, anche senza Internet. Restano solo sul tuo PC, senza account.
-- **Taglia inizio e fine** di qualsiasi brano dal menu **⋯**: utile per i caricamenti che partono dopo 30-40 secondi di silenzio. Il file non viene modificato.
-- **Esporta file**: copia sul computer un brano scaricato o caricato, per modificarlo e ricaricarlo.
-- **Importa** playlist da link Spotify e YouTube Music, da Apple Music e da file CSV, TXT o XML.
-- **Trova da un file**: scegli una canzone dal computer e Onda la cerca dal titolo e dall'artista nel file, o ti propone brani simili.
-- **Ascolto offline**: scarica brani o intere playlist e riproducili senza Internet. I brani SoundCloud che ascolti o salvi in playlist si scaricano da soli (disattivabile).
-- **Wrapped**: i minuti realmente ascoltati e le classifiche di brani, artisti e album, per mese, anno o da sempre, con un'immagine da esportare e condividere.
-- **Preferiti** e **Recenti**, timer di spegnimento, controlli multimediali di Windows e attività su Discord (disattivabile).
-- **Temi**: Chiaro, Scuro, Oceano, Aurora, Foresta, Tramonto, Rosa, Lilla, Avana, Sabbia e uno personale con il colore che scegli. Interfaccia in italiano e inglese.
+- **Cerca** brani, artisti e album nel catalogo di YouTube Music mentre scrivi, e brani su SoundCloud. Le pagine di artisti e album mostrano brani, uscite e artisti simili.
+- **Incolla un link** nella ricerca: un brano, un album o una playlist di YouTube o YouTube Music, un brano o un set di SoundCloud, una playlist, un album o un brano di Spotify. Onda lo apre: puoi riprodurlo subito o salvarlo come playlist.
+- **Ascolta** con coda, *Riproduci dopo*, casuale, ripetizione e autoplay. Quando la musica finisce, Onda continua con brani simili. Da ogni brano può partire una radio.
+- **Vista di ascolto** a tutta finestra, con copertina grande e testo sincronizzato quando disponibile. Un clic su una riga porta la canzone a quel punto.
+- **Per te**: al primo avvio un breve questionario (lingua, tema, generi, artisti e brani preferiti) crea la playlist *Per te*. La Home propone brani e artisti da scoprire. Puoi chiedere di non consigliare più un brano o un artista.
+- **Playlist**: crea, riordina trascinando, cerca all'interno, seleziona più brani insieme, rimuovi i duplicati, scegli una copertina. Puoi condividerle come file `.onda`.
+- **Importa** playlist da link di YouTube, YouTube Music, SoundCloud e Spotify (pubbliche, senza account), o da file `.onda`, CSV (anche da Exportify), TXT con righe `Artista - Titolo`, XML (iTunes/XSPF) e M3U. I brani non trovati vengono elencati.
+- **Ascolto offline**: scarica brani o intere playlist e riproducili senza Internet.
+- **I miei brani**: aggiungi i tuoi file audio (MP3, M4A, AAC, FLAC, WAV, OGG, OPUS, WEBM) con *Carica brani* o trascinandoli sulla finestra. Vengono copiati in Onda; gli originali non si toccano.
+- **Taglia inizio e fine** di qualsiasi brano dal menu **⋯**, per saltare i silenzi lunghi. Il file non viene modificato.
+- **Mini-player** sempre in primo piano, con il testo che scorre (Ctrl+M, scorciatoia modificabile).
+- **In sottofondo**: icona nell'area di notifica con i comandi, musica che continua quando chiudi la finestra, avvio all'accesso al computer, se lo vuoi.
+- **Wrapped**: minuti ascoltati, brani e artisti più ascoltati per mese, anno o da sempre, con un'immagine verticale da condividere.
+- **Preferiti** e **Recenti**, timer di spegnimento, dissolvenza a inizio e fine brano, controlli multimediali della tastiera e di sistema, attività su Discord (disattivabile).
+- **Temi** Scuro, Chiaro, Nero (per schermi OLED) e Notte; opzione *Riduci animazioni*. Interfaccia in italiano e inglese (alcuni testi restano in italiano).
+- **Backup e ripristino** di libreria, statistiche e impostazioni in una cartella, da *Impostazioni → Dati*.
 
-Per riprodurre un brano clicca sulla sua copertina; il resto della riga lo seleziona. Il menu **⋯** raccoglie le altre azioni. Con *Riduci le animazioni* (Impostazioni → Aspetto) ogni movimento viene disattivato.
+### Ancora da portare dalla versione 0.2
 
-## Importare una playlist
-
-Apri **Playlist → Importa playlist**. Puoi provare con il [CSV di esempio](examples/playlist.csv).
-
-| Origine | Come fare |
-| --- | --- |
-| Spotify | Incolla il link di una playlist pubblica, un album, un brano o un artista e premi **Apri link**. Non serve un account. Di una playlist Spotify mostra al massimo i primi 100 brani. |
-| YouTube / YouTube Music | Incolla il link di una playlist pubblica o non in elenco e premi **Apri link**. |
-| Altri servizi | Scegli un file CSV con le colonne `Titolo` e `Artista`. La durata è facoltativa. |
-| Apple Music / iTunes | Scegli una playlist esportata in XML o TXT con titoli e artisti. |
-| Testo semplice | Un file TXT con una riga `Artista - Titolo` per ogni brano. |
-
-Onda cerca ogni titolo su YouTube Music e mostra le corrispondenze: quelle dubbie restano deselezionate e puoi controllarle a mano, mentre i brani non trovati compaiono nel riepilogo. Premendo **Importa** nasce una nuova playlist locale; la playlist di partenza e le tue playlist esistenti non vengono toccate.
-
-I link di Apple Music non si importano direttamente: usa il file esportato. Nessun audio viene scaricato da Spotify o Apple Music, vengono lette solo le informazioni dei brani. Sono supportati file fino a 10 MB e playlist fino a 5.000 brani.
+Queste funzioni della vecchia Onda non sono ancora nella 0.6.0: aggiornamento automatico, link `onda://` e codici di condivisione, tavolozza comandi (Ctrl+K), video nella vista di ascolto, *Trova da un file*, *Esporta file*, import diretto da Apple Music (il file XML esportato funziona) e i temi colorati. Arriveranno nelle prossime versioni.
 
 ## Privacy
 
-- Nessun account Onda e nessuna registrazione.
-- Playlist, preferiti, cronologia, statistiche e impostazioni restano sul tuo computer, in `%LOCALAPPDATA%\OndaPlayer`.
-- Ricerche, riproduzione e testi sono richieste ai rispettivi servizi esterni (YouTube Music, SoundCloud, LRCLIB). I link che importi vengono aperti su Spotify. Onda non invia altro.
-- *Trova da un file* legge solo titolo, artista e durata dal file sul tuo computer e li usa per la ricerca: il file non viene inviato a nessuno.
-- *I miei brani*: i file che carichi vengono copiati in `%LOCALAPPDATA%\OndaPlayer\uploads` e non vengono inviati a nessuno. Per la radio da un tuo brano Onda usa solo titolo e artista.
-- *Impostazioni → Assistenza → Esporta rapporto errori* crea uno ZIP in locale, con versione, sistema e log recenti, senza dati della tua libreria. Non viene inviato da nessuna parte: controllalo prima di condividerlo.
+- Nessun account Onda e nessuna registrazione. Nessuna statistica d'uso inviata.
+- Playlist, preferiti, cronologia, statistiche e impostazioni restano sul tuo computer, nella cartella dati di Onda:
+  - Windows: `%LOCALAPPDATA%\app.onda.player`
+  - macOS: `~/Library/Application Support/app.onda.player`
+  - Linux: `~/.local/share/app.onda.player`
+- Ricerche, riproduzione e testi vengono chiesti ai rispettivi servizi esterni (YouTube Music, SoundCloud, LRCLIB). I link Spotify che importi vengono letti dalla pagina pubblica di Spotify. Onda non invia altro.
+- I file che aggiungi in *I miei brani* restano sul tuo computer. Per la radio da un tuo brano Onda usa solo titolo e artista.
+- Il *rapporto errori* (*Impostazioni*) raccoglie gli ultimi errori della sessione e si copia negli appunti. Non viene inviato da nessuna parte: controllalo prima di condividerlo.
 
 ## Segnalare un bug
 
-Scrivimi sul [server Discord](https://discord.gg/SE4Q9gt3j) o in privato (ID `1007318097985798144`), anche da *Impostazioni → Segnala un bug su Discord*. Indica:
+Scrivimi sul [server Discord](https://discord.gg/SE4Q9gt3j) o in privato (ID `1007318097985798144`). Indica:
 
-- la versione di Onda e di Windows;
+- la versione di Onda (*Impostazioni → Informazioni*) e il sistema operativo;
 - i passaggi per riprodurre il problema e cosa ti aspettavi;
 - il titolo, l'artista o il link del brano, se riguarda riproduzione o testi;
-- uno screenshot, se utile, senza dati personali.
+- il rapporto errori e uno screenshot, se utili, senza dati personali.
 
-## Limiti della beta
+## Limiti
 
-Catalogo, riproduzione e testi dipendono da servizi esterni: la disponibilità può cambiare e non tutti i brani hanno un testo sincronizzato. Su SoundCloud molte etichette offrono solo 30 secondi: quei brani non compaiono nella ricerca; dentro un set restano, segnalati. Onda non inventa i tempi mancanti. Sono possibili bug e rallentamenti di rete.
+Catalogo, riproduzione e testi dipendono da servizi esterni: la disponibilità può cambiare e non tutti i brani hanno un testo sincronizzato. Su SoundCloud alcune etichette offrono solo anteprime di 30 secondi. Sono possibili bug e rallentamenti di rete.
 
-Questo repository distribuisce **il programma e la documentazione**: il codice sorgente non è pubblicato. I componenti di terze parti conservano le proprie licenze, incluse nello ZIP.
+Per verificare un download, confronta il suo SHA256 con il file `SHA256SUMS.txt` della release.
+
+Questo repository distribuisce **il programma e la documentazione**: il codice sorgente non è pubblicato. Onda include [yt-dlp](https://github.com/yt-dlp/yt-dlp) (licenza Unlicense); gli altri componenti di terze parti conservano le proprie licenze.
 
 ---
 
 ## English
 
-**Onda** is a minimal, fluid Windows music player with no account required. It is currently in beta.
+**Onda** is a minimal, fluid music player for **Windows, macOS and Linux**, with no account. It plays the YouTube Music catalogue, SoundCloud and your own audio files. Version 0.6.0 is a full rewrite: lighter, faster to open and quicker to start playback.
 
-**Install:** from 0.2.0 on, Onda updates itself (*Download update* in the notice or in *Settings → Updates*). To install for the first time or move from an older beta, download and run **[Onda-Setup.exe](https://github.com/VoidAle/Onda/releases/latest/download/Onda-Setup.exe)**: it installs for your user only (no admin rights) and adds Onda to the Start menu. A portable ZIP is also on the [release page](https://github.com/VoidAle/Onda/releases/latest). Do not download or move **Onda.exe** on its own. Windows 10/11 (64-bit) and an Internet connection are required; no Python or Node.js needed. The beta is not code-signed, so SmartScreen may ask for confirmation (*More info → Run anyway*). If Windows says an app control policy blocked the file: right-click Onda-Setup.exe (or the ZIP) → *Properties* → *Unblock* **before** opening it. Your data stays in `%LOCALAPPDATA%\OndaPlayer`.
+**Download:** [Windows (Onda-Setup.exe)](https://github.com/VoidAle/Onda/releases/latest/download/Onda-Setup.exe) · [macOS (Onda-macOS.dmg)](https://github.com/VoidAle/Onda/releases/latest/download/Onda-macOS.dmg) · Linux [.deb](https://github.com/VoidAle/Onda/releases/latest/download/Onda-Linux.deb) / [.rpm](https://github.com/VoidAle/Onda/releases/latest/download/Onda-Linux.rpm) / [AppImage](https://github.com/VoidAle/Onda/releases/latest/download/Onda-Linux.AppImage). The macOS and Linux builds are **experimental**: they are built and launched automatically for each release, but have not yet seen much real-world use.
 
-**Features:** search the YouTube Music catalogue, radio and a personal mix, similar artists, a floating mini player (Ctrl+M), a command palette (Ctrl+K), tray icon with background playback, backup and restore, experimental crossfade, queue and autoplay, an immersive listening view with synced lyrics and optional video, local playlists (reorder, search, de-duplicate, share with a code or a `.onda` file), *My tracks* (upload your own audio files, local only, drag and drop supported), per-track start/end trimming to skip long silences, file export, SoundCloud sets from a link (SoundCloud tracks you play or save are downloaded automatically, optional), playlist import from YouTube Music, Spotify, Apple Music and CSV/TXT/XML files, offline downloads, Wrapped listening statistics, favorites and history, sleep timer, Windows media controls, optional Discord activity, eleven themes and an Italian/English interface (*Settings → Language*). *Reduce animations* turns off all motion.
+- **Windows 10/11 (64-bit):** run Onda-Setup.exe. It installs for your user only (no admin rights). If you had Onda 0.2.x, the installer removes it and the new Onda imports your playlists, favorites, history, trims and downloads on first launch; the old data in `%LOCALAPPDATA%\OndaPlayer` is left untouched. Onda is not code-signed: on SmartScreen choose *More info → Run anyway*; if an app control policy blocks it, right-click the file → *Properties* → *Unblock* before opening.
+- **macOS 10.15+ (Apple Silicon and Intel):** drag Onda to Applications. Onda is not notarized: on macOS 15+ open it once, then go to *System Settings → Privacy & Security → Open Anyway*; on older versions right-click → *Open*. If macOS says the app is damaged, run `xattr -dr com.apple.quarantine /Applications/Onda.app`.
+- **Linux x86_64 with WebKitGTK 4.1** (Ubuntu 22.04+, Debian 12+, Fedora): `sudo apt install ./Onda-Linux.deb`, `sudo dnf install ./Onda-Linux.rpm`, or make the AppImage executable and run it (needs `libfuse2`).
 
-**Privacy:** no account, no telemetry. Library and settings stay on your computer. Searches, playback and lyrics go to the respective third-party services only, including SoundCloud; imported Spotify links are opened on Spotify. Files you pick for *Find from a file* or add to *My tracks* are never uploaded.
+**Updates:** Onda 0.6 does not update itself yet. Download the new version from the [releases page](https://github.com/VoidAle/Onda/releases/latest) and install it over the old one; your data stays.
 
-**Bugs:** report them on [Discord](https://discord.gg/SE4Q9gt3j) with the app version, Windows version, reproduction steps and the affected song or link.
+**Features:** live search of YouTube Music and SoundCloud, paste a YouTube/SoundCloud/Spotify link to open it, queue, shuffle, repeat, autoplay and radio, full-window listening view with synced lyrics, a first-run taste quiz that builds a *For you* playlist, playlists with drag-and-drop reordering, multi-select, de-duplication, custom covers and `.onda` file sharing, playlist import from links and CSV/TXT/XML/M3U files, offline downloads, your own audio files, per-track start/end trimming, a floating mini player with lyrics (Ctrl+M), tray icon and background playback, Wrapped listening stats with a shareable image, sleep timer, fades, media keys, optional Discord activity, four themes and an Italian/English interface.
 
-This is a binary-only release: the source code is not published in this repository. Third-party components keep their own licenses, included in the ZIP.
+**Privacy:** no account, no telemetry. Your library and settings stay on your computer. Searches, playback and lyrics go only to the respective services (YouTube Music, SoundCloud, LRCLIB).
+
+**Bugs:** report them on [Discord](https://discord.gg/SE4Q9gt3j) with the Onda version, your operating system, the steps to reproduce and the affected song or link.
+
+This is a binary-only release: the source code is not published in this repository. Onda bundles [yt-dlp](https://github.com/yt-dlp/yt-dlp) (Unlicense); other third-party components keep their own licenses.
